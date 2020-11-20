@@ -1,0 +1,10 @@
+Titlul temei: gestionarea locurilor de parcare concesionate
+
+Specificatii:
+Pentru o gestionare mai organizata si simpla a locurilor de parcare s-a creat o baza de date prin care putem gestiona eficient locurile de parcare.
+
+- proprietarul: ne intereseaza datele acestuia, mai specific datele care se regasesc in buletin, numarul de telefon si eventual email-ul.
+- masina proprietarului: detalii despre masina proprietarului, in special numarul de inmatriculare pentru a putea fi gravat pe asfalt.
+- locul de parcare: pentru o organiza mai simplista, fiecare loc de parcare de pe o anumita strada are asociat un index
+- plata: pentru a putea valida locul de parcare este nevoie de o dovada a platii, aceasta contine suma (pentru a stii pe ce durata s-a rezvervat locul) si data efectuarii platii.
+
