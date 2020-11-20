@@ -109,3 +109,65 @@ INSERT INTO detalii_masina VALUES (
 	'EURO5',
 	(SELECT index_proprietar FROM proprietari WHERE nume = 'Balta' AND prenume = 'Gabriel')
 );
+
+
+-- pentru testarea constrangerilor
+-- numarul de inmatriculare se afla deja in tabela
+INSERT INTO detalii_masina VALUES (
+	'BMW',
+	'X7',
+	'B-01-ANV',
+	'negru',
+	3000,
+	2020,
+	'EURO5',
+	(SELECT index_proprietar FROM proprietari WHERE nume = 'Paraschiv' AND prenume = 'Vlad')
+);
+
+-- numarul de inmatriculare sa fie in una din formele : L-DD-LLL, L-DDD-LLL, LL-DD-LLL ( L-litera, D-cifra )
+INSERT INTO detalii_masina VALUES (
+	'BMW',
+	'X7',
+	'B-1-ANV',
+	'negru',
+	3000,
+	2020,
+	'EURO5',
+	(SELECT index_proprietar FROM proprietari WHERE nume = 'Paraschiv' AND prenume = 'Vlad')
+);
+
+-- capacitatea motor sa fie intre 1 si 9999
+INSERT INTO detalii_masina VALUES (
+	'BMW',
+	'X7',
+	'NT-01-ANV',
+	'negru',
+	99999,
+	2020,
+	'EURO5',
+	(SELECT index_proprietar FROM proprietari WHERE nume = 'Paraschiv' AND prenume = 'Vlad')
+);
+
+-- culoarea sa nu contina cifre
+INSERT INTO detalii_masina VALUES (
+	'BMW',
+	'X7',
+	'B-01-ANV',
+	'neg4ru',
+	3000,
+	2020,
+	'EURO5',
+	(SELECT index_proprietar FROM proprietari WHERE nume = 'Paraschiv' AND prenume = 'Vlad')
+);
+
+-- an fabricatie sa fie intre 1950 si 2020
+INSERT INTO detalii_masina VALUES (
+	'BMW',
+	'X7',
+	'B-01-ANV',
+	'negru',
+	3000,
+	2022,
+	'EURO5',
+	(SELECT index_proprietar FROM proprietari WHERE nume = 'Paraschiv' AND prenume = 'Vlad')
+); 
