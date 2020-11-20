@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="propietari_locuri_parcare_fk" directorySegmentName="seg_0" id="84A8D938-0750-B510-F686-4BDE660C47D0">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-06 11:43:30 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
+</engineerTo>
+<sourcePk>5F653909-0E46-14DC-9430-0357AE30795F</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>detin</nameOnSource>
+<nameOnTarget>sunt detinute de</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9FE770EC-5051-DB4C-1180-5D5B77708352</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>28D27CD7-E117-0BED-3430-FE3FDAC8BBC7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

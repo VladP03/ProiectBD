@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BEBC5D6B-6CDC-7459-53E6-71D846F9394E" name="Modalitati_plata">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-09 18:57:24 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_plata" id="8CA01CB8-0E27-2182-C92E-48F634BED3F3">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-09 19:00:47 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tip" id="2FACFCA1-1CFF-6949-4337-B03650741B02">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-09 18:57:31 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
+</engineerTo>
+<constraintName>tip_plata-ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<listOfValues>
+<valueDef value="card" description=""/>
+<valueDef value="numerar" description=""/>
+</listOfValues>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_tranzactie" id="81526FDC-C870-07E7-8A58-EE8E4CF1D0FE">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-09 18:57:44 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="suma" id="0AF22821-62F8-5ABE-0071-023EFA05FAAB">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-09 18:57:55 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
+</engineerTo>
+<constraintName>suma_plata_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<listOfValues>
+<valueDef value="1700" description=""/>
+<valueDef value="500" description=""/>
+<valueDef value="900" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6CB92CB6-81F8-9005-7B91-937D9E626777" name="Modalitati_plata PK">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-09 19:01:09 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8CA01CB8-0E27-2182-C92E-48F634BED3F3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

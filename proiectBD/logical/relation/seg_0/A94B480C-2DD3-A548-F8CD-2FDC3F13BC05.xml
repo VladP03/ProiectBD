@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="strazi_locuri_de_parcare" directorySegmentName="seg_0" id="A94B480C-2DD3-A548-F8CD-2FDC3F13BC05">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-09 18:56:42 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
+</engineerTo>
+<sourcePk>8734CB87-AFFE-DA0A-6FE1-B8E55427CFC7</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>sunt pe</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2AA0B944-0804-0B96-B230-F1917C1EA578</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>28D27CD7-E117-0BED-3430-FE3FDAC8BBC7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

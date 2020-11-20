@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="proprietari_buletine_fk" directorySegmentName="seg_0" id="D90531AD-AD70-5175-BFAD-AB2C1DF7B83D">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-06 11:42:58 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
+</engineerTo>
+<sourcePk>5F653909-0E46-14DC-9430-0357AE30795F</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>detin</nameOnSource>
+<nameOnTarget>sunt ale </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9FE770EC-5051-DB4C-1180-5D5B77708352</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>DD42976F-DA59-DCC0-1915-D91D2C0DA466</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

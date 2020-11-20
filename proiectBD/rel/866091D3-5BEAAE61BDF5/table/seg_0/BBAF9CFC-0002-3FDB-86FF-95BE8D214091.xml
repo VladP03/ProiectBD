@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BBAF9CFC-0002-3FDB-86FF-95BE8D214091" name="Strazi">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-09 20:31:03 UTC</createdTime>
+<generatorID>2AA0B944-0804-0B96-B230-F1917C1EA578</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="index_strada" id="5B2CA803-322E-8E47-870C-E25F793C6729">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-09 20:31:03 UTC</createdTime>
+<generatorID>2EE025DD-2EC8-4522-7681-754608ECB3DF</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="denumire" id="562E4841-F357-CB09-7344-7371835885DF">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-09 20:31:03 UTC</createdTime>
+<generatorID>B77473A5-A96A-C452-C32A-7B24958BD7D9</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>denumire_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE ( denumire, &apos;^[a-zA-Z .&apos;&apos;-]+$&apos; ) "/>
+</checkConstraint>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cartier" id="D0DDDA18-7DA4-D890-610D-9D0C1B9C2EEB">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-09 20:31:03 UTC</createdTime>
+<generatorID>CA39650E-E4AF-3221-ACA6-784665EB1109</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>cartier_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE ( denumire, &apos;^[a-zA-Z .&apos;&apos;-]+$&apos; ) "/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_locuri_parcare" id="C871D545-B0F1-D0B8-CA32-9B1BFFE33082">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-09 20:31:03 UTC</createdTime>
+<generatorID>0A690E09-4E90-BB44-1C3B-E58D648D69DC</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>strazi_nr_locuri_parcare_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="40DFABEF-7698-5A57-B535-CCF7BD2E95F5" name="Strazi_PK">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-09 20:31:03 UTC</createdTime>
+<generatorID>8734CB87-AFFE-DA0A-6FE1-B8E55427CFC7</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B2CA803-322E-8E47-870C-E25F793C6729"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
