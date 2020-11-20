@@ -18,7 +18,10 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>index_loc_parcare_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>index_loc_parcare_trg</autoIncrementTriggerName>
 </Column>
 <Column name="durata" id="3D99DC4E-B444-E78B-9A9F-609A890AE4FF">
 <createdBy>Vlad</createdBy>

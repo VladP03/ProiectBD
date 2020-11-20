@@ -18,7 +18,10 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>index_strada_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>index_strada_trg</autoIncrementTriggerName>
 </Column>
 <Column name="denumire" id="84E4ED34-27FF-8878-BB1B-402CF356127F">
 <createdBy>Vlad</createdBy>

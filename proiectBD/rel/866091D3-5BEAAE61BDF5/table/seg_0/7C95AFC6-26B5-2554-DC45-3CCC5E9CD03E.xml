@@ -18,7 +18,10 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>id_plata_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>id_plata_trg</autoIncrementTriggerName>
 </Column>
 <Column name="tip" id="3DD1F693-DC6B-FDC7-D490-76289B7DBF32">
 <createdBy>Vlad</createdBy>

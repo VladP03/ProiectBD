@@ -18,7 +18,10 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>index_proprietar_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>index_proprietar_trg</autoIncrementTriggerName>
 </Column>
 <Column name="nume" id="8E354772-5117-B0BE-07BE-9FC25E7FCC36">
 <createdBy>Vlad</createdBy>

@@ -20,7 +20,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="2AA0B944-0804-0B96-B230-F1917C1EA578" otype="Entity" vid="CDDFD16F-092C-1CD1-AB41-F9446AC38F6D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="885" y="558" width="135" height="82"/>
+<bounds x="885" y="558" width="141" height="82"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="493D0E43-235E-C4D5-8DBA-524E422FB416" otype="Entity" vid="883DDA5D-0434-354D-B347-6095D14DC9FF">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -32,7 +32,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="BEBC5D6B-6CDC-7459-53E6-71D846F9394E" otype="Entity" vid="AD1553AE-7418-8A26-D876-ADEFC2739959">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="890" y="110" width="131" height="82"/>
+<bounds x="868" y="119" width="131" height="82"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="DD42976F-DA59-DCC0-1915-D91D2C0DA466" otype="Entity" vid="6D9B3AC4-D9EF-CDC8-6EAD-7A9D7EB743EE">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -67,19 +67,19 @@
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="952" y="228" width="45" height="30"/>
+<labelBounds x="934" y="237" width="45" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="952" y="309" width="30" height="30"/>
+<labelBounds x="934" y="309" width="30" height="30"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </targetLabel>
 <points>
-<point x="952" y="192"/>
-<point x="952" y="345"/>
+<point x="934" y="201"/>
+<point x="934" y="345"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="84A8D938-0750-B510-F686-4BDE660C47D0" otype="Relation" vid_source="33C7A4F8-52A0-C7E6-AD4E-6074005AFE09" vid_target="C14716F2-FB46-A37C-87FB-89A93F2A7332">

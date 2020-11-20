@@ -104,6 +104,8 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>index_proprietar_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>index_proprietar_trg</autoIncrementTriggerName>
 <associations>
 <colAssociation fkAssociation="15FF2AD3-AB59-7A60-3ED0-205E9C1B703A" referredColumn="63ACE59B-F222-8867-4DCE-179075076D36"/>
 </associations>
