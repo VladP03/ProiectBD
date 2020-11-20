@@ -96,5 +96,18 @@
 <attributeRef>2EE025DD-2EC8-4522-7681-754608ECB3DF</attributeRef>
 </usedAttributes>
 </identifier>
+<identifier id="7D60D611-B3EA-8FA6-80F7-EB91835C6ECA" name="strazi_denumire_cartier_UNIQUE">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-20 07:21:55 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
+</engineerTo>
+<newElementsIDs>B77473A5-A96A-C452-C32A-7B24958BD7D9,CA39650E-E4AF-3221-ACA6-784665EB1109</newElementsIDs>
+<usedAttributes>
+<attributeRef>B77473A5-A96A-C452-C32A-7B24958BD7D9</attributeRef>
+<attributeRef>CA39650E-E4AF-3221-ACA6-784665EB1109</attributeRef>
+</usedAttributes>
+</identifier>
 </identifiers>
 </Entity>
