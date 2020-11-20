@@ -69,16 +69,70 @@ INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
 );
 
 
+
+
 -- pentru testarea constrangerilor
 
 -- telefonul exista deja in tabela
 INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
+    'Adrian',
+    'Costache',
     '0739104921',
     'a@b.c'
 );
 
 -- email-ul este deja in tabela
 INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
+    'Adrian',
+    'Costache',
     '079999999',
     'razvanbejenariu@gmail.com'
+);
+
+-- email-ul nu este de tip a@b.c
+INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
+    'Adrian',
+    'Costache',
+    '079999999',
+    'a@bc'
+);
+
+-- telefonul nu incepe cu 07
+INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
+    'Adrian',
+    'Costache',
+    '0912345678',
+    'hahaha@gmail.com'
+);
+
+-- telefonul are mai putin de 10 cifre
+INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
+    'Adrian',
+    'Costache',
+    '071234567',
+    'hahaha@gmail.com'
+);
+
+-- telefonul are mai mult de 10 cifre
+INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
+    'Adrian',
+    'Costache',
+    '071234567424',
+    'hahaha@gmail.com'
+);
+
+-- numele contine cifre
+INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
+    'Adr4ian',
+    'Costache',
+    '0712345624',
+    'hahaha@gmail.com'
+);
+
+-- prenumele contine cifre
+INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
+    'Adrian',
+    'Costache0',
+    '0712345624',
+    'hahaha@gmail.com'
 );
