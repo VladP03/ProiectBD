@@ -136,3 +136,12 @@ INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
     '0712345624',
     'hahaha@gmail.com'
 );
+
+
+-- o inserare pentru alte teste
+INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
+    'Costache',
+    'Adrian',
+    '0768204650',
+    'adriancostache@gmail.com'
+);

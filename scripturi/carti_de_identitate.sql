@@ -95,7 +95,33 @@ INSERT INTO carti_de_identitate VALUES (
     TO_DATE('29.10.1999', 'DD.MM.YYYY'),
     'M',
     'Strada Moldovei',
-   'IS12345699',
+    'IS12345699',
     'Iasi',
     (SELECT index_proprietar FROM proprietari WHERE nume = 'Balta' AND prenume = 'Gabriel')
 );
+
+
+
+-- teste pentru constrangeri
+-- cnp trebuie sa fie unique
+INSERT INTO carti_de_identitate VALUES (
+    '1000000000008',
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'IS12345777',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
+);
+
+-- serie_nr trebuie sa fie unique
+INSERT INTO carti_de_identitate VALUES (
+    '1000000600008',
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'IS12345693',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
+);
+
