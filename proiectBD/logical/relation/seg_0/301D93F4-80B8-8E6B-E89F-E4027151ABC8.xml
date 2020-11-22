@@ -1,19 +1,19 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="propietari_locuri_parcare_fk" directorySegmentName="seg_0" id="84A8D938-0750-B510-F686-4BDE660C47D0">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="masini_locuri_parcare" directorySegmentName="seg_0" id="301D93F4-80B8-8E6B-E89F-E4027151ABC8">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-06 11:43:30 UTC</createdTime>
+<createdTime>2020-11-22 12:25:37 UTC</createdTime>
 <ownerDesignName>proiectBD</ownerDesignName>
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
-<sourcePk>5F653909-0E46-14DC-9430-0357AE30795F</sourcePk>
+<sourcePk>B75A4CF6-303C-63B2-BB82-52B1CC7A80B8</sourcePk>
 <identifying>false</identifying>
-<nameOnSource>detin</nameOnSource>
-<nameOnTarget>sunt detinute de</nameOnTarget>
+<nameOnSource>au</nameOnSource>
+<nameOnTarget>pentru</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>9FE770EC-5051-DB4C-1180-5D5B77708352</sourceEntity>
+<sourceEntity>493D0E43-235E-C4D5-8DBA-524E422FB416</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
 <targetEntity>28D27CD7-E117-0BED-3430-FE3FDAC8BBC7</targetEntity>
 <transferable>true</transferable>

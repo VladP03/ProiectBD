@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03D7554E-DC6C-1DFC-AFCE-00AC86312D24" name="Detalii_masina">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DBE7A3BA-3FEC-6FC3-08B2-0B3E9BE6A64A" name="masini">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-20 08:35:46 UTC</createdTime>
+<createdTime>2020-11-22 12:29:56 UTC</createdTime>
 <generatorID>493D0E43-235E-C4D5-8DBA-524E422FB416</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="marca" id="95DC0967-CF5B-5AC0-046D-DFE915105FA4">
+<Column name="marca" id="36F2E805-884A-E190-8379-B1E0F364F7DC">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-20 08:35:46 UTC</createdTime>
+<createdTime>2020-11-22 12:29:56 UTC</createdTime>
 <generatorID>9E4817A7-5D9A-59A2-E138-97895723447A</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>marca_CK</constraintName>
@@ -24,9 +24,9 @@
 <ownDataTypeParameters>15,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="model" id="DDD9F039-C4F5-95CA-39CB-85AE90608255">
+<Column name="model" id="9321C411-99A2-7AE1-5A2B-1B9BF8B3152F">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-20 08:35:46 UTC</createdTime>
+<createdTime>2020-11-22 12:29:56 UTC</createdTime>
 <generatorID>6C5EC668-A11C-82FE-DE35-CE94095074BB</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -36,9 +36,9 @@
 <ownDataTypeParameters>15,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nr_inmatriculare" id="B3BA268A-EB41-4FD2-00E3-E245ADA9AA24">
+<Column name="nr_inmatriculare" id="7E647E10-31D3-FCE2-B275-97E549A4600B">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-20 08:35:46 UTC</createdTime>
+<createdTime>2020-11-22 12:29:56 UTC</createdTime>
 <generatorID>FE790AA4-D33A-60AF-A902-574693084B4A</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>nr_inmatriculare_ck</constraintName>
@@ -52,9 +52,9 @@
 <ownDataTypeParameters>9,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="culoare" id="A09DD8C1-A33C-0DD8-6E37-B0C6AAE0BC3B">
+<Column name="culoare" id="9CBECF37-B834-1056-FC3E-A657E54EF109">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-20 08:35:46 UTC</createdTime>
+<createdTime>2020-11-22 12:29:56 UTC</createdTime>
 <generatorID>52CB8382-5FF9-6ADF-0772-2F93603286C5</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>culoare_CK</constraintName>
@@ -68,9 +68,9 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="capacitate_motor" id="2CCFD699-2EA5-D122-C467-515C95BB9292">
+<Column name="capacitate_motor" id="C7EFB250-81E9-C96E-8DDD-9F76BF355CF4">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-20 08:35:46 UTC</createdTime>
+<createdTime>2020-11-22 12:29:56 UTC</createdTime>
 <generatorID>842B26F5-721A-1ADA-9AB1-C58D0734F122</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>capacitate_motor_ck</constraintName>
@@ -88,9 +88,9 @@
 </rangeDef>
 </listOfRanges>
 </Column>
-<Column name="an_fabricatie" id="C5A4E389-2F7F-195F-6288-FFA0A6ABF27D">
+<Column name="an_fabricatie" id="CADCEE1A-165F-2C65-249E-8FF1C0401008">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-20 08:35:46 UTC</createdTime>
+<createdTime>2020-11-22 12:29:56 UTC</createdTime>
 <generatorID>764CAD52-95F6-89F9-9BA5-14D5B187183E</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>an_fabricatie_ck</constraintName>
@@ -107,23 +107,10 @@
 </rangeDef>
 </listOfRanges>
 </Column>
-<Column name="euro" id="5F44DC5A-4A03-12CE-4132-0E0773226B02">
+<Column name="index_proprietar" id="84AEB90D-4029-FF96-33A4-48B5B987FE61">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-20 08:35:46 UTC</createdTime>
-<generatorID>C52BB640-552F-A07D-A81F-5DB5DE372534</generatorID>
-<ownerDesignName>proiectBD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>7</dataTypeSize>
-<ownDataTypeParameters>7,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="index_proprietar" id="A443B3E7-E515-F923-CE4C-C54BC50B6C27">
-<createdBy>Vlad</createdBy>
-<createdTime>2020-11-20 08:35:46 UTC</createdTime>
-<generatorID>85C1DD2D-9AE7-A93B-0C4E-2B4B5044A1AB</generatorID>
+<createdTime>2020-11-22 12:29:56 UTC</createdTime>
+<generatorID>6B453039-4194-1104-89E1-3F3132EBEB76</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -133,31 +120,33 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="9707B0CC-9DE3-079E-C394-EB796E90FE5F" referredColumn="63ACE59B-F222-8867-4DCE-179075076D36"/>
+<colAssociation fkAssociation="25B805AE-2235-24D7-E59C-03E636447E2E" referredColumn="CACB90B9-D6D5-70E7-85EA-7B713F0485DB"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="051C68B1-2BBB-9BC6-FB80-9A0BA15DE9AC" name="nr_inmatriculare_unique">
+<ind_PK_UK id="1E4DAD44-A455-31CF-FE59-DAB181699AA1" name="nr_inmatriculare_unique">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-20 08:35:46 UTC</createdTime>
+<createdTime>2020-11-22 12:29:56 UTC</createdTime>
 <generatorID>B75A4CF6-303C-63B2-BB82-52B1CC7A80B8</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
-<indexState>Unique Constraint</indexState>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="B3BA268A-EB41-4FD2-00E3-E245ADA9AA24"/>
+<colUsage columnID="7E647E10-31D3-FCE2-B275-97E549A4600B"/>
+<colUsage columnID="84AEB90D-4029-FF96-33A4-48B5B987FE61"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0786C603-6B05-F08F-2715-8F6EC9C6E984" name="propietari_masini_fk">
+<ind_PK_UK id="71357C5A-7B1E-95EE-6570-92C66B66ED58" name="proprietari_masini">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-20 08:35:46 UTC</createdTime>
-<generatorID>5E2AE90F-0F6D-AF2D-D7DA-05F02516F138</generatorID>
+<createdTime>2020-11-22 12:29:56 UTC</createdTime>
+<generatorID>2B49A3C0-8F5C-F33D-42CD-FD4AA786E398</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="A443B3E7-E515-F923-CE4C-C54BC50B6C27"/>
+<colUsage columnID="84AEB90D-4029-FF96-33A4-48B5B987FE61"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -42,18 +42,19 @@ INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
     'mihaelapaval@gmail.com'
 );
 
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
+INSERT INTO proprietari(nume,prenume,telefon) VALUES (
     'Arcana',
     'Geanina',
-    '0759024519',
-    'geaninaarcana@gmail.com'
+    '0759024519'
 );
+
 INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
     'Bejenariu',
     'Razvan',
     '0751529430',
     'razvanbejenariu@gmail.com'
 );
+
 INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
     'Toscariu',
     'Alberto',
@@ -61,11 +62,10 @@ INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
     'albertotoscariu@gmail.com'
 );
 
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
+INSERT INTO proprietari(nume,prenume,telefon) VALUES (
     'Balta',
     'Gabriel',
-    '0749899645',
-    'gabibalta@gmail.com'
+    '0749899645'
 );
 
 

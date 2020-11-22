@@ -62,26 +62,6 @@
 </checkConstraint>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nr_locuri_parcare" id="0A690E09-4E90-BB44-1C3B-E58D648D69DC">
-<createdBy>Vlad</createdBy>
-<createdTime>2020-11-09 18:55:28 UTC</createdTime>
-<ownerDesignName>proiectBD</ownerDesignName>
-<engineerTo>
-<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
-</engineerTo>
-<constraintName>strazi_nr_locuri_parcare_ck</constraintName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
-<listOfRanges>
-<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
-<beginValue>0</beginValue>
-<endValue>999</endValue>
-</rangeDef>
-</listOfRanges>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="8734CB87-AFFE-DA0A-6FE1-B8E55427CFC7" name="Strazi PK">

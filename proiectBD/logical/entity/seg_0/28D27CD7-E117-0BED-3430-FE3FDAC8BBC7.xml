@@ -72,21 +72,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="index_proprietar" id="ACD29DD7-4AE2-0410-26C8-D112B4AFE8DB">
-<createdBy>Vlad</createdBy>
-<createdTime>2020-11-06 13:54:11 UTC</createdTime>
-<generatorID>84A8D938-0750-B510-F686-4BDE660C47D0</generatorID>
-<ownerDesignName>proiectBD</ownerDesignName>
-<engineerTo>
-<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
-</engineerTo>
-<referedAttribute>DB42D5B4-7020-F748-C868-ABD6F4DD7889</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="index_strada" id="FEC05611-4E9F-F913-8FF4-59A34145EE81">
 <createdBy>Vlad</createdBy>
 <createdTime>2020-11-09 18:56:42 UTC</createdTime>
@@ -100,7 +85,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_plata" id="B4AF9E44-8FE8-924F-A6AF-067828C8F7CD">
 <createdBy>Vlad</createdBy>
@@ -111,6 +96,21 @@
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
 <referedAttribute>8CA01CB8-0E27-2182-C92E-48F634BED3F3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="index_proprietar" id="DA125907-3638-D5DE-FA99-781B7059ADA4">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-22 12:25:37 UTC</createdTime>
+<generatorID>301D93F4-80B8-8E6B-E89F-E4027151ABC8</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
+</engineerTo>
+<referedAttribute>6B453039-4194-1104-89E1-3F3132EBEB76</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>

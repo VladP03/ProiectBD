@@ -1,57 +1,49 @@
-INSERT INTO strazi(denumire,cartier,nr_locuri_parcare) VALUES (
+INSERT INTO strazi(denumire,cartier) VALUES (
 	'Strada Tudor Vladimirescu',
-	'T Vladimirescu',
-	10
+	'T Vladimirescu'
 );
 
-INSERT INTO strazi(denumire,cartier,nr_locuri_parcare) VALUES (
+INSERT INTO strazi(denumire,cartier) VALUES (
 	'Bulevard Alexandru cel Bun',
-	'Podu de Fier',
-	6
+	'Podu de Fier'
 );
 
-INSERT INTO strazi(denumire,cartier,nr_locuri_parcare) VALUES (
+INSERT INTO strazi(denumire,cartier) VALUES (
 	'Strada Arbore Luca',
-	'Agronomie',
-	4
+	'Agronomie'
 );
 
-INSERT INTO strazi(denumire,cartier,nr_locuri_parcare) VALUES (
+INSERT INTO strazi(denumire,cartier) VALUES (
 	'Strada Cihac Iosif',
-	'T Vladimirescu',
-    9
+	'T Vladimirescu'
 );
 
-INSERT INTO strazi(denumire,cartier,nr_locuri_parcare) VALUES (
+INSERT INTO strazi(denumire,cartier) VALUES (
 	'Strada Dacia',
-	'Dacia',
-	12
+	'Dacia'
 );
-INSERT INTO strazi(denumire,cartier,nr_locuri_parcare) VALUES (
+
+INSERT INTO strazi(denumire,cartier) VALUES (
 	'Strada Egalitatii',
-	'Agronomie',
-	4
+	'Agronomie'
 );
-INSERT INTO strazi(denumire,cartier,nr_locuri_parcare) VALUES (
+
+INSERT INTO strazi(denumire,cartier) VALUES (
 	'Strada Fulger',
-	'Copou',
-	3
+	'Copou'
 );
 
-INSERT INTO strazi(denumire,cartier,nr_locuri_parcare) VALUES (
+INSERT INTO strazi(denumire,cartier) VALUES (
 	'Strada Iepurilor',
-	'Agronomie',
-	2
+	'Agronomie'
 );
 
-INSERT INTO strazi(denumire,cartier,nr_locuri_parcare) VALUES (
+INSERT INTO strazi(denumire,cartier) VALUES (
 	'Strada Moldovei',
-	'Copou',
-	8
+	'Copou'
 );
 
-INSERT INTO strazi(denumire,cartier,nr_locuri_parcare) VALUES (
+INSERT INTO strazi(denumire,cartier) VALUES (
 	'Strada Bas Ceaus',
-	'Dacia',
-	6
+	'Dacia'
 );
