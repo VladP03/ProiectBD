@@ -168,3 +168,16 @@ SELECT nume,prenume, masini.nr_inmatriculare FROM Proprietari prop
  JOIN locuri_de_parcare loc ON (prop.index_proprietar = loc.index_proprietar)
  JOIN Strazi ON (loc.index_strada = strazi.index_strada)
   WHERE denumire = 'Strada Iepurilor';
+
+-- afisam cate locuri de parcare are 'Paraschiv Vlad'
+SELECT COUNT(index_loc_parcare) from locuri_de_parcare loc 
+ JOIN masini ON (masini.nr_inmatriculare = loc.nr_inmatriculare)
+ JOIN proprietari prop ON (masini.index_proprietar = prop.index_proprietar)
+  WHERE nume = 'Paraschiv' AND prenume = 'Vlad';
+
+-- afisam masinile lui 'Paraschiv Vlad'
+SELECT marca, model FROM masini
+ JOIN proprietari prop ON (prop.index_proprietar = masini.index_proprietar)
+  WHERE nume = 'Paraschiv' AND prenume = 'Vlad';
+
+
