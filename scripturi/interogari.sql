@@ -72,6 +72,9 @@ SELECT nume, prenume, masini.marca, masini.model FROM proprietari prop
   WHERE nr_inmatriculare LIKE 'SV%';
   
 -- afisam toti proprietarii care au 3 cifre in nr de inmatriculare
+SELECT nume, prenume, masini.marca, masini.model FROM proprietari prop
+ JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
+  WHERE nr_inmatriculare LIKE '%-___-%';
 
 -- afisam toti proprietarii care detin marca VW
 SELECT nume, prenume FROM proprietari prop

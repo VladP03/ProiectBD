@@ -100,6 +100,16 @@ INSERT INTO masini VALUES (
 	(SELECT index_proprietar FROM proprietari WHERE nume = 'Balta' AND prenume = 'Gabriel')
 );
 
+INSERT INTO masini VALUES (
+	'Audi',
+	'18',
+	'B-111-ANV',
+	'gri',
+	1899,
+	2017,
+	(SELECT index_proprietar FROM proprietari WHERE nume = 'Paraschiv' AND prenume = 'Vlad')
+);
+
 
 -- pentru testarea constrangerilor
 -- numarul de inmatriculare se afla deja in tabela
