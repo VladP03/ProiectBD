@@ -1,21 +1,21 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="proprietari_masini" directorySegmentName="seg_0" id="2B49A3C0-8F5C-F33D-42CD-FD4AA786E398">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="proprietari_plati" directorySegmentName="seg_0" id="A0087B8E-4418-3BA7-2F16-900997A3B508">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-22 12:25:19 UTC</createdTime>
+<createdTime>2020-11-23 10:46:35 UTC</createdTime>
 <ownerDesignName>proiectBD</ownerDesignName>
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
 <sourcePk>5F653909-0E46-14DC-9430-0357AE30795F</sourcePk>
 <identifying>false</identifying>
-<nameOnSource>detin</nameOnSource>
-<nameOnTarget>sunt detinute de</nameOnTarget>
+<nameOnSource>fac</nameOnSource>
+<nameOnTarget>sunt facute de</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>9FE770EC-5051-DB4C-1180-5D5B77708352</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>493D0E43-235E-C4D5-8DBA-524E422FB416</targetEntity>
+<targetEntity>BEBC5D6B-6CDC-7459-53E6-71D846F9394E</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

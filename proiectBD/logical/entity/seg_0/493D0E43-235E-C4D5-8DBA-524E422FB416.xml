@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="493D0E43-235E-C4D5-8DBA-524E422FB416" name="masini">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="493D0E43-235E-C4D5-8DBA-524E422FB416" name="Masini">
 <createdBy>Vlad</createdBy>
 <createdTime>2020-11-01 08:48:02 UTC</createdTime>
 <ownerDesignName>proiectBD</ownerDesignName>
@@ -134,22 +134,20 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="B75A4CF6-303C-63B2-BB82-52B1CC7A80B8" name="nr_inmatriculare_unique">
+<identifier id="D1BB20D2-E3CE-8F93-E139-AFD68E778EB8" name="nr_inmatriculare_uniquev1">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-06 13:48:11 UTC</createdTime>
+<createdTime>2020-11-23 11:18:35 UTC</createdTime>
 <ownerDesignName>proiectBD</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="false"/>
+<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
-<pk>true</pk>
-<newElementsIDs>2B49A3C0-8F5C-F33D-42CD-FD4AA786E398</newElementsIDs>
+<newElementsIDs>FE790AA4-D33A-60AF-A902-574693084B4A</newElementsIDs>
 <usedAttributes>
-<attributeRef>6B453039-4194-1104-89E1-3F3132EBEB76</attributeRef>
+<attributeRef>FE790AA4-D33A-60AF-A902-574693084B4A</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

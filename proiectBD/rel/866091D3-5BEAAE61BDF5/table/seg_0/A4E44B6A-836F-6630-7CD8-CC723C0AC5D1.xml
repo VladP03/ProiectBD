@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40B2778F-C1D2-DBA8-D3A9-800AF9874BE0" name="Strazi">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A4E44B6A-836F-6630-7CD8-CC723C0AC5D1" name="Strazi">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-22 12:53:50 UTC</createdTime>
+<createdTime>2020-11-23 11:19:18 UTC</createdTime>
 <generatorID>2AA0B944-0804-0B96-B230-F1917C1EA578</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="index_strada" id="75E53D98-CF02-33E9-834C-FD2AE8C159F9">
+<Column name="index_strada" id="D6F73BED-EECD-B92B-5A4A-8FAF5740D014">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-22 12:53:50 UTC</createdTime>
+<createdTime>2020-11-23 11:19:18 UTC</createdTime>
 <generatorID>2EE025DD-2EC8-4522-7681-754608ECB3DF</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -23,9 +23,9 @@
 <autoIncrementSequenceName>index_strada_seq</autoIncrementSequenceName>
 <autoIncrementTriggerName>index_strada_trg</autoIncrementTriggerName>
 </Column>
-<Column name="denumire" id="E1E2D019-1793-A9EF-F9E3-46350AD852DA">
+<Column name="denumire" id="BDBCC2A5-D2AC-CFE4-8DCA-59761AEEE909">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-22 12:53:50 UTC</createdTime>
+<createdTime>2020-11-23 11:19:18 UTC</createdTime>
 <generatorID>B77473A5-A96A-C452-C32A-7B24958BD7D9</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>denumire_CK</constraintName>
@@ -39,9 +39,9 @@
 <ownDataTypeParameters>35,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cartier" id="FAD7ABC8-A659-019E-0809-697241F8489B">
+<Column name="cartier" id="FB86E99E-F593-7D24-DB65-83999435D322">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-22 12:53:50 UTC</createdTime>
+<createdTime>2020-11-23 11:19:18 UTC</createdTime>
 <generatorID>CA39650E-E4AF-3221-ACA6-784665EB1109</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>cartier_CK</constraintName>
@@ -57,28 +57,28 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="87C5E182-BCBF-927B-D557-AE0C1DEC531B" name="Strazi_PK">
+<ind_PK_UK id="6813174F-3EF4-ECAE-E24D-BA7E521A81C3" name="Strazi_PK">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-22 12:53:50 UTC</createdTime>
+<createdTime>2020-11-23 11:19:18 UTC</createdTime>
 <generatorID>8734CB87-AFFE-DA0A-6FE1-B8E55427CFC7</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="75E53D98-CF02-33E9-834C-FD2AE8C159F9"/>
+<colUsage columnID="D6F73BED-EECD-B92B-5A4A-8FAF5740D014"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0BD817DB-004C-6BCE-9C95-D3E661E6067B" name="strazi_denumire_cartier_UNIQUE">
+<ind_PK_UK id="6527EDA5-4188-8E6B-8A4A-1835BE6FC854" name="strazi_denumire_cartier_UNIQUE">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-22 12:53:50 UTC</createdTime>
+<createdTime>2020-11-23 11:19:18 UTC</createdTime>
 <generatorID>7D60D611-B3EA-8FA6-80F7-EB91835C6ECA</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="E1E2D019-1793-A9EF-F9E3-46350AD852DA"/>
-<colUsage columnID="FAD7ABC8-A659-019E-0809-697241F8489B"/>
+<colUsage columnID="BDBCC2A5-D2AC-CFE4-8DCA-59761AEEE909"/>
+<colUsage columnID="FB86E99E-F593-7D24-DB65-83999435D322"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

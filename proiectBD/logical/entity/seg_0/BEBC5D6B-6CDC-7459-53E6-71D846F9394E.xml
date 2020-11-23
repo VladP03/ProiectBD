@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BEBC5D6B-6CDC-7459-53E6-71D846F9394E" name="Modalitati_plata">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BEBC5D6B-6CDC-7459-53E6-71D846F9394E" name="Plati">
 <createdBy>Vlad</createdBy>
 <createdTime>2020-11-09 18:57:24 UTC</createdTime>
 <ownerDesignName>proiectBD</ownerDesignName>
@@ -76,6 +76,21 @@
 <valueDef value="900" description=""/>
 </listOfValues>
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="index_proprietar" id="A72FDFD2-4A6E-53A0-722B-95430CF9BA3D">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-23 10:46:35 UTC</createdTime>
+<generatorID>A0087B8E-4418-3BA7-2F16-900997A3B508</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
+</engineerTo>
+<referedAttribute>DB42D5B4-7020-F748-C868-ABD6F4DD7889</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

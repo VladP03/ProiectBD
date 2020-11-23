@@ -102,19 +102,19 @@
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="index_proprietar" id="DA125907-3638-D5DE-FA99-781B7059ADA4">
+<Attribute name="nr_inmatriculare" id="D0540B73-6C98-D6CE-553D-4BC4CF2B077A">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-22 12:25:37 UTC</createdTime>
+<createdTime>2020-11-23 11:19:07 UTC</createdTime>
 <generatorID>301D93F4-80B8-8E6B-E89F-E4027151ABC8</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
-<referedAttribute>6B453039-4194-1104-89E1-3F3132EBEB76</referedAttribute>
+<referedAttribute>FE790AA4-D33A-60AF-A902-574693084B4A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
