@@ -73,7 +73,73 @@ select nume, prenume, masini.marca, masini.model from proprietari prop
   
 -- afisam toti proprietarii care au 3 cifre in nr de inmatriculare
 
-
+-- afisam toti proprietarii care detin marca VW
+select nume, prenume from proprietari prop
+ JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
+  WHERE marca = 'VW';
+  
+-- afisam toti proprietarii de VW care au anul fabricatiei > 2010 si capacitate motor <1700
+select nume, prenume from proprietari prop
+ JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
+  WHERE marca = 'VW' AND an_fabricatie > 2010 AND capacitate_motor < 1700;
+  
+-- afisam toti proprietarii care au un VW negru
+select nume, prenume from proprietari prop
+ JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
+  WHERE marca = 'VW' and culoare = 'negru';
+  
+-- afisam toate platile efectuate din 2019 pana in prezent
+select id_plata, tip from modalitati_plata
+ WHERE TO_CHAR(data_tranzactie,'YYYY') >= 2019;
+ 
+-- afisam toate platile efectuate numerar
+select id_plata from modalitati_plata
+ WHERE tip = 'numerar';
+ 
+-- afisam toate platile mai mari de 550 lei
+select id_plata from modalitati_plata
+ WHERE suma > 550;
+ 
+-- afisam cate plati s-au efectuat in total
+SELECT COUNT(id_plata) from modalitati_plata;
+ 
+-- afisam toate platile mai mari de 900 de lei efectuate din 2018 in prezent
+select id_plata from modalitati_plata
+ WHERE TO_CHAR(data_tranzactie, 'YYYY') >= 2018 AND suma>900;
+ 
+-- afisam platile efectuate in luna martie din orice an
+select id_plata from modalitati_plata
+ WHERE TO_CHAR(data_tranzactie, 'MON' ) = 'MAR';
+ 
+-- afisam proprietarii si masinile care au rezervat locul de parcare in luna martie
+select nume, prenume, masini.marca, masini.model FROM proprietari prop
+ JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
+ JOIN locuri_de_parcare loc ON (loc.index_proprietar = prop.index_proprietar)
+  WHERE TO_CHAR(data_inceput,'MON') = 'MAR';
+  
+-- afisam proprietarii si masinile carora le expira locul de parcare in 2019
+select nume, prenume, masini.marca, masini.model FROM proprietari prop
+ JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
+ JOIN locuri_de_parcare loc ON (loc.index_proprietar = prop.index_proprietar)
+  WHERE TO_CHAR(data_expirare,'YYYY') = 2019;
+  
+-- afisam proprietarii care si-au achizionat locul pe 12 luni
+select nume, prenume FROM proprietari prop
+ JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
+ JOIN locuri_de_parcare loc ON (loc.index_proprietar = prop.index_proprietar)
+  WHERE durata = 12;
+  
+-- afisam CNP-ul persoanei care are locul de parcare cu numarul 5
+select CNP from carti_de_identitate buletin
+ JOIN locuri_de_parcare loc ON (buletin.index_proprietar = loc.index_proprietar)
+  WHERE index_loc_parcare = 5;
+  
+-- afisam persoanele si masinile persoanelor care au achizitionat un loc de parcare pe cel putin 12 luni si s-au nascut in in una dintre lunile februarie,martie,aprilie,mai
+select nume, prenume, masini.marca, masini.model FROM proprietari prop
+ JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
+ JOIN locuri_de_parcare loc ON (prop.index_proprietar = loc.index_proprietar)
+ JOIN carti_de_identitate buletin ON (prop.index_proprietar = buletin.index_proprietar)
+  WHERE loc.durata >= 12 AND TO_CHAR(data_nastere,'MON') IN ('FEB', 'MAR', 'APR'); 
 
 -- afisam cartierele
 select distinct(cartier) from strazi;
