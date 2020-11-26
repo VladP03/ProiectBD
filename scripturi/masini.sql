@@ -14,7 +14,7 @@ INSERT INTO masini VALUES (
 	'VW',
 	'Golf',
 	'SV-99-DIA',
-	'rosu',
+	'alb',
 	1598,
 	2001,
 	(SELECT index_proprietar FROM proprietari WHERE nume = 'Buliga' AND prenume = 'Diana')
