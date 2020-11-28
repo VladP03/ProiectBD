@@ -102,10 +102,10 @@
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nr_inmatriculare" id="D0540B73-6C98-D6CE-553D-4BC4CF2B077A">
+<Attribute name="nr_inmatriculare" id="05DDA0FC-066A-0D80-204C-B8E093D02654">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-23 11:19:07 UTC</createdTime>
-<generatorID>301D93F4-80B8-8E6B-E89F-E4027151ABC8</generatorID>
+<createdTime>2020-11-28 15:32:25 UTC</createdTime>
+<generatorID>EE5BDDFC-9B6F-08CF-07ED-E603FB147F07</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>

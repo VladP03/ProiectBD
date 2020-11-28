@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="masini_locuri_parcare" directorySegmentName="seg_0" id="301D93F4-80B8-8E6B-E89F-E4027151ABC8">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="masini_locuri_parcare" directorySegmentName="seg_0" id="EE5BDDFC-9B6F-08CF-07ED-E603FB147F07">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-22 12:25:37 UTC</createdTime>
+<createdTime>2020-11-28 15:32:25 UTC</createdTime>
 <ownerDesignName>proiectBD</ownerDesignName>
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
@@ -14,7 +14,7 @@
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>493D0E43-235E-C4D5-8DBA-524E422FB416</sourceEntity>
-<targetCardinalityString>*</targetCardinalityString>
+<targetCardinalityString>1</targetCardinalityString>
 <targetEntity>28D27CD7-E117-0BED-3430-FE3FDAC8BBC7</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>

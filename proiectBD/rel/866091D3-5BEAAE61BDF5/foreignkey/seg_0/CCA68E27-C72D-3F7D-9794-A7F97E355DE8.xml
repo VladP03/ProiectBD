@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CCA68E27-C72D-3F7D-9794-A7F97E355DE8" containerWithKeyObject="F2956FD8-C696-DBFA-7BC3-120CE711B7C4" localFKIndex="B14E8DBD-3F27-F112-48DE-6B2C384D73EF" name="masini_locuri_parcare">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 15:33:06 UTC</createdTime>
+<generatorID>EE5BDDFC-9B6F-08CF-07ED-E603FB147F07</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<referredTableLongName>Masini</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E22ECC52-97C9-E146-9C16-12BD8653C0C8</referredTableID>
+<keyObject>C981B6AD-1F8F-CBF9-7ACF-E6141C5F25C5</keyObject>
+<referredKeyID>C981B6AD-1F8F-CBF9-7ACF-E6141C5F25C5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>nr_inmatriculare</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
