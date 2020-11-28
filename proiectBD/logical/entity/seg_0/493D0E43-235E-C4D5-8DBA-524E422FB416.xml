@@ -114,12 +114,6 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
-<listOfRanges>
-<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
-<beginValue>1950</beginValue>
-<endValue>2020</endValue>
-</rangeDef>
-</listOfRanges>
 </Attribute>
 <Attribute name="index_proprietar" id="6B453039-4194-1104-89E1-3F3132EBEB76">
 <createdBy>Vlad</createdBy>

@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B6A7563C-7618-75B4-1D3C-72BC229FC7EE" name="Plati">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A957701-9562-15EE-65EA-5C7F6C710BDE" name="Plati">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 15:33:06 UTC</createdTime>
+<createdTime>2020-11-28 17:06:39 UTC</createdTime>
 <generatorID>BEBC5D6B-6CDC-7459-53E6-71D846F9394E</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_plata" id="EA4AC44D-8195-D950-8A1F-5A8DC8FB1D56">
+<Column name="id_plata" id="09BD43D5-CA1B-3DB0-E0D8-6AED5FACA1CF">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 15:33:06 UTC</createdTime>
+<createdTime>2020-11-28 17:06:39 UTC</createdTime>
 <generatorID>8CA01CB8-0E27-2182-C92E-48F634BED3F3</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -18,14 +18,11 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
-<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<autoIncrementSequenceName>id_plata_seq</autoIncrementSequenceName>
-<autoIncrementTriggerName>id_plata_trg</autoIncrementTriggerName>
 </Column>
-<Column name="tip" id="36119A53-14A1-31A5-74D8-F628D38C8A6F">
+<Column name="tip" id="9DEAADE9-3B8A-B409-31EC-B8F331CE88EE">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 15:33:06 UTC</createdTime>
+<createdTime>2020-11-28 17:06:39 UTC</createdTime>
 <generatorID>2FACFCA1-1CFF-6949-4337-B03650741B02</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>tip_plata-ck</constraintName>
@@ -40,9 +37,9 @@
 <ownDataTypeParameters>7,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="data_tranzactie" id="4CCBA62C-0BAA-442B-CD3A-8781031436C6">
+<Column name="data_tranzactie" id="08230717-C378-FEC1-9C4E-3BDB201A5621">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 15:33:06 UTC</createdTime>
+<createdTime>2020-11-28 17:06:39 UTC</createdTime>
 <generatorID>81526FDC-C870-07E7-8A58-EE8E4CF1D0FE</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -51,9 +48,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="suma" id="45496FB5-2D9C-0A0B-5258-04D99DAF772F">
+<Column name="suma" id="DC7EC7BE-73E3-5D2E-10F4-C75D9B89718A">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 15:33:06 UTC</createdTime>
+<createdTime>2020-11-28 17:06:39 UTC</createdTime>
 <generatorID>0AF22821-62F8-5ABE-0071-023EFA05FAAB</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>suma_plata_ck</constraintName>
@@ -69,9 +66,9 @@
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="index_proprietar" id="BFF1486A-A2ED-F881-4FCC-5537DCAB933B">
+<Column name="index_proprietar" id="53EAB965-7378-EE2B-567A-EE136043562A">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 15:33:06 UTC</createdTime>
+<createdTime>2020-11-28 17:06:39 UTC</createdTime>
 <generatorID>A72FDFD2-4A6E-53A0-722B-95430CF9BA3D</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -82,32 +79,32 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="E60FBFEA-68F0-CF61-8B1B-4470B2991D3C" referredColumn="0716B54A-262B-EC5D-D25A-4CE2E6858357"/>
+<colAssociation fkAssociation="606E9DF8-A82A-0780-E3E3-A309A9407A62" referredColumn="F5CE4BE5-C415-D89A-A257-E30B05C00983"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="25A8B489-70E9-7CD0-41F0-2EF4C392EA11" name="Modalitati_plata_PK">
+<ind_PK_UK id="C9A4E19D-CA3E-6AD7-D94E-5DB757F96D53" name="Modalitati_plata_PK">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 15:33:06 UTC</createdTime>
+<createdTime>2020-11-28 17:06:39 UTC</createdTime>
 <generatorID>6CB92CB6-81F8-9005-7B91-937D9E626777</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="EA4AC44D-8195-D950-8A1F-5A8DC8FB1D56"/>
+<colUsage columnID="09BD43D5-CA1B-3DB0-E0D8-6AED5FACA1CF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="4A035F1B-600F-7C27-C399-1DF201C6A922" name="proprietari_plati">
+<ind_PK_UK id="A370E6C3-655D-661D-1C0E-58AD6C7AA4FD" name="proprietari_plati">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 15:33:06 UTC</createdTime>
+<createdTime>2020-11-28 17:06:39 UTC</createdTime>
 <generatorID>A0087B8E-4418-3BA7-2F16-900997A3B508</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="BFF1486A-A2ED-F881-4FCC-5537DCAB933B"/>
+<colUsage columnID="53EAB965-7378-EE2B-567A-EE136043562A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

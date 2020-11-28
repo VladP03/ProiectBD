@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E1AFDE1F-836B-B107-8F2D-86D554987C07" containerWithKeyObject="95DB854C-68A1-4198-C763-AAE2AFA1564A" localFKIndex="79B1A1C8-4099-7A06-D35F-AE6B531FDA7B" name="modalitati_plata_parcare">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 17:06:39 UTC</createdTime>
+<generatorID>76EA6BA7-A2F2-58B6-671D-30AA4FED0D97</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<referredTableLongName>Plati</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5A957701-9562-15EE-65EA-5C7F6C710BDE</referredTableID>
+<keyObject>C9A4E19D-CA3E-6AD7-D94E-5DB757F96D53</keyObject>
+<referredKeyID>C9A4E19D-CA3E-6AD7-D94E-5DB757F96D53</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_plata</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

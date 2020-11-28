@@ -75,7 +75,7 @@
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>10</dataTypeSize>
 <checkConstraint>
-<implementationDef dbType="Generic Constraint" definition="regexp_like(telefon, &apos;^07\d{8}$&apos;)"/>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(telefon, &apos;^0(2|7)\d{8}$&apos;)"/>
 </checkConstraint>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>

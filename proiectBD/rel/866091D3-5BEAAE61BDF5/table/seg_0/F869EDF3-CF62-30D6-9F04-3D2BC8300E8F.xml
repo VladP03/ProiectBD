@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="673F1334-ACF7-2CAA-2B8B-F1F06ED5949C" name="Strazi">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F869EDF3-CF62-30D6-9F04-3D2BC8300E8F" name="Strazi">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 15:33:06 UTC</createdTime>
+<createdTime>2020-11-28 17:06:39 UTC</createdTime>
 <generatorID>2AA0B944-0804-0B96-B230-F1917C1EA578</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="index_strada" id="D06065D9-95A5-D936-91AB-DC287B9D584A">
+<Column name="index_strada" id="A8E3D780-6054-ED67-CDD1-01D09A389717">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 15:33:06 UTC</createdTime>
+<createdTime>2020-11-28 17:06:39 UTC</createdTime>
 <generatorID>2EE025DD-2EC8-4522-7681-754608ECB3DF</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -18,14 +18,11 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
-<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<autoIncrementSequenceName>index_strada_seq</autoIncrementSequenceName>
-<autoIncrementTriggerName>index_strada_trg</autoIncrementTriggerName>
 </Column>
-<Column name="denumire" id="0B15C8F7-0D61-5EE4-AAE3-1D6F6766D5D9">
+<Column name="denumire" id="B429F5D0-6C2B-319F-BA2A-2FE566C0C60A">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 15:33:06 UTC</createdTime>
+<createdTime>2020-11-28 17:06:39 UTC</createdTime>
 <generatorID>B77473A5-A96A-C452-C32A-7B24958BD7D9</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>denumire_CK</constraintName>
@@ -39,9 +36,9 @@
 <ownDataTypeParameters>35,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cartier" id="5804E805-B794-5980-BE93-9E264D1689C4">
+<Column name="cartier" id="7BFD1BE8-E62C-7D4A-B833-23D0B782686B">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 15:33:06 UTC</createdTime>
+<createdTime>2020-11-28 17:06:39 UTC</createdTime>
 <generatorID>CA39650E-E4AF-3221-ACA6-784665EB1109</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>cartier_CK</constraintName>
@@ -57,28 +54,28 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="30B3EBD9-6BBC-C1E2-160D-E64973BAAC12" name="Strazi_PK">
+<ind_PK_UK id="25C8A462-6977-70D5-9D3D-EF0B618D192A" name="Strazi_PK">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 15:33:06 UTC</createdTime>
+<createdTime>2020-11-28 17:06:39 UTC</createdTime>
 <generatorID>8734CB87-AFFE-DA0A-6FE1-B8E55427CFC7</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="D06065D9-95A5-D936-91AB-DC287B9D584A"/>
+<colUsage columnID="A8E3D780-6054-ED67-CDD1-01D09A389717"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="591B6E86-BB65-E3A5-D6E4-4D59039B6A39" name="strazi_denumire_cartier_UNIQUE">
+<ind_PK_UK id="61F7A79C-D6A8-333B-5BF1-8AD315DE978E" name="strazi_denumire_cartier_UNIQUE">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 15:33:06 UTC</createdTime>
+<createdTime>2020-11-28 17:06:39 UTC</createdTime>
 <generatorID>7D60D611-B3EA-8FA6-80F7-EB91835C6ECA</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="0B15C8F7-0D61-5EE4-AAE3-1D6F6766D5D9"/>
-<colUsage columnID="5804E805-B794-5980-BE93-9E264D1689C4"/>
+<colUsage columnID="B429F5D0-6C2B-319F-BA2A-2FE566C0C60A"/>
+<colUsage columnID="7BFD1BE8-E62C-7D4A-B833-23D0B782686B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
