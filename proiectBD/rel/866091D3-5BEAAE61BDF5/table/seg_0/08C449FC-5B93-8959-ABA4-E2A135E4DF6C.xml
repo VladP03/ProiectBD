@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="08C449FC-5B93-8959-ABA4-E2A135E4DF6C" name="Proprietari">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 12:57:28 UTC</createdTime>
+<generatorID>9FE770EC-5051-DB4C-1180-5D5B77708352</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="index_proprietar" id="F92D57FF-0CB4-8075-7D68-DC735476F68C">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 12:57:28 UTC</createdTime>
+<generatorID>DB42D5B4-7020-F748-C868-ABD6F4DD7889</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>index_proprietar_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>index_proprietar_trg</autoIncrementTriggerName>
+</Column>
+<Column name="nume" id="F0F421CE-5614-8F43-062B-BC7982E63831">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 12:57:28 UTC</createdTime>
+<generatorID>908D92CE-48B6-767A-8B89-C81364FFA172</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like (nume, &apos;^[a-zA-Z .&apos;&apos;-]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume" id="9F6ECE8B-D82F-BC77-DD69-360FC1BF915C">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 12:57:28 UTC</createdTime>
+<generatorID>876A6CC7-896E-2327-3B2F-9220C6AE8DFB</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like (prenume, &apos;^[a-zA-Z .&apos;&apos;-]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="918FF4AC-C46F-9BBC-DD59-BFFA538888E5">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 12:57:28 UTC</createdTime>
+<generatorID>A14E6DE0-027E-81B2-5529-481D0AA54DA6</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>telefon_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(telefon, &apos;^07\d{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="FBC12B59-6F89-31B1-5853-A9B0BF918E9A">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 12:57:28 UTC</createdTime>
+<generatorID>9D24E274-C4BC-B312-2D24-442414F0F41B</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>email_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<defaultValue>NULL</defaultValue>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="38311677-4D19-777D-3D47-688516BC1E67" name="Propietari_PK">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 12:57:28 UTC</createdTime>
+<generatorID>5F653909-0E46-14DC-9430-0357AE30795F</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F92D57FF-0CB4-8075-7D68-DC735476F68C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="088FBB7F-055E-289B-C588-4486D016C6E4" name="telefon_unique">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 12:57:28 UTC</createdTime>
+<generatorID>B01418F2-1113-61D9-E72E-B1ECFB14F79D</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="918FF4AC-C46F-9BBC-DD59-BFFA538888E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="146AD060-8A94-CE79-0F10-0582D19D61A4" name="email_unique">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 12:57:28 UTC</createdTime>
+<generatorID>A4DEDC1E-72D6-92A4-4E99-39549BBEA4EB</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBC12B59-6F89-31B1-5853-A9B0BF918E9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
