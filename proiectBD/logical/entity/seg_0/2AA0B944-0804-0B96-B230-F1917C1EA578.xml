@@ -58,7 +58,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
 <checkConstraint>
-<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE ( denumire, &apos;^[a-zA-Z .&apos;&apos;-]+$&apos; ) "/>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE ( cartier, &apos;^[a-zA-Z .&apos;&apos;-]+$&apos; ) "/>
 </checkConstraint>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>

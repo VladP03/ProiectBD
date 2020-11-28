@@ -111,7 +111,7 @@ INSERT INTO masini VALUES (
 );
 
 
--- pentru testarea constrangerilor
+-- testarea constrangerilor
 -- numarul de inmatriculare se afla deja in tabela
 INSERT INTO masini VALUES (
 	'BMW',

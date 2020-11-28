@@ -138,7 +138,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="D1BB20D2-E3CE-8F93-E139-AFD68E778EB8" name="nr_inmatriculare_uniquev1">
+<identifier id="D1BB20D2-E3CE-8F93-E139-AFD68E778EB8" name="nr_inmatriculare_unique">
 <createdBy>Vlad</createdBy>
 <createdTime>2020-11-23 11:18:35 UTC</createdTime>
 <ownerDesignName>proiectBD</ownerDesignName>

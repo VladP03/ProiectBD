@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A5E97BD9-DE5A-A36B-41E7-42C1CFBC2C8F" name="Masini">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:57:35 UTC</createdTime>
+<generatorID>493D0E43-235E-C4D5-8DBA-524E422FB416</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="marca" id="E0CC0C24-A9DF-A6A9-F103-780CAD170A64">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:57:35 UTC</createdTime>
+<generatorID>9E4817A7-5D9A-59A2-E138-97895723447A</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>marca_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like (marca, &apos;^[a-zA-Z .&apos;&apos;-]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model" id="CC0518C3-12C4-8535-1164-F4773269EE67">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:57:35 UTC</createdTime>
+<generatorID>6C5EC668-A11C-82FE-DE35-CE94095074BB</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_inmatriculare" id="1E26A9E4-7609-46DA-816B-EEBF43CBD7C8">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:57:35 UTC</createdTime>
+<generatorID>FE790AA4-D33A-60AF-A902-574693084B4A</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>nr_inmatriculare_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE ( nr_inmatriculare,&apos;[A-Z][A-Z]-[0-9][0-9]-[A-Z][A-Z][A-Z]&apos; ) or REGEXP_LIKE ( nr_inmatriculare,&apos;[A-Z]-[0-9][0-9]-[A-Z][A-Z][A-Z]&apos; ) or  REGEXP_LIKE ( nr_inmatriculare,&apos;[A-Z]-[0-9][0-9][0-9]-[A-Z][A-Z][A-Z]&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="culoare" id="86E7AA9C-B96F-CA46-D569-7DE1605FEDF0">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:57:35 UTC</createdTime>
+<generatorID>52CB8382-5FF9-6ADF-0772-2F93603286C5</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>culoare_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like (culoare, &apos;^[a-zA-Z .&apos;&apos;-]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacitate_motor" id="4D3EB4B5-E940-F0CC-7788-D097A01C913B">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:57:35 UTC</createdTime>
+<generatorID>842B26F5-721A-1ADA-9AB1-C58D0734F122</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>capacitate_motor_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999</endValue>
+<description>Lista de valori pentru capacitatea motorului</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="an_fabricatie" id="2001794C-9DEC-B9E6-CB14-4CFBD986A69F">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:57:35 UTC</createdTime>
+<generatorID>764CAD52-95F6-89F9-9BA5-14D5B187183E</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>an_fabricatie_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1950</beginValue>
+<endValue>2020</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="index_proprietar" id="2E22BF98-C2A2-185D-41E7-37A40D97C151">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:57:35 UTC</createdTime>
+<generatorID>6B453039-4194-1104-89E1-3F3132EBEB76</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FBE64EC5-4256-6091-D7E6-5E7AB320D500" referredColumn="CA29FC88-A089-B471-3910-00832DD67850"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3459A75-BD47-C66A-A486-CBEDC130E9C0" name="nr_inmatriculare_unique">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:57:35 UTC</createdTime>
+<generatorID>D1BB20D2-E3CE-8F93-E139-AFD68E778EB8</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E26A9E4-7609-46DA-816B-EEBF43CBD7C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F163E9CD-252A-406A-D447-DAD1C8F4F1BE" name="proprietari_masini">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:57:35 UTC</createdTime>
+<generatorID>2B49A3C0-8F5C-F33D-42CD-FD4AA786E398</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E22BF98-C2A2-185D-41E7-37A40D97C151"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

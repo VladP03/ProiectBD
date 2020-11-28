@@ -1,3 +1,4 @@
+-- inserari bune
 INSERT INTO strazi(denumire,cartier) VALUES (
 	'Strada Tudor Vladimirescu',
 	'T Vladimirescu'
@@ -46,4 +47,28 @@ INSERT INTO strazi(denumire,cartier) VALUES (
 INSERT INTO strazi(denumire,cartier) VALUES (
 	'Strada Bas Ceaus',
 	'Dacia'
+);
+
+-- testarea constrangerilor
+-- Nu pot exista 2 strazi cu acelasi nume intr-un cartier, dar pot exista 2 strazi cu acelasi nume in cartiere diferite
+INSERT INTO strazi(denumire,cartier) VALUES (
+	'Strada Bas Ceaus',
+	'ABCD'
+);
+
+INSERT INTO strazi(denumire,cartier) VALUES (
+	'Strada Bas Ceaus',
+	'ABCD'
+);
+
+-- numele strazii trebuie sa contina doar litere
+INSERT INTO strazi(denumire,cartier) VALUES (
+	'Strad123132a Bas Ceaus',
+	'ABC3D'
+);
+
+-- numele cartierului trebuie sa contina doar litere
+INSERT INTO strazi(denumire,cartier) VALUES (
+	'Strada Bas Ceaus',
+	'ABCD4'
 );

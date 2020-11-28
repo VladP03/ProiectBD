@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9DBE0C16-268C-4DFE-C09C-D6BBB13EF1EA" name="Proprietari">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:56:35 UTC</createdTime>
+<generatorID>9FE770EC-5051-DB4C-1180-5D5B77708352</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="index_proprietar" id="B06B28E4-6EA7-8A64-20EB-DA392076C55E">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:56:35 UTC</createdTime>
+<generatorID>DB42D5B4-7020-F748-C868-ABD6F4DD7889</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume" id="68A541CF-EEA0-5619-9934-6881EC2298C1">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:56:35 UTC</createdTime>
+<generatorID>908D92CE-48B6-767A-8B89-C81364FFA172</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like (nume, &apos;^[a-zA-Z .&apos;&apos;-]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume" id="DB6EF7E0-EA67-97DF-2B37-2E3CE47F1126">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:56:35 UTC</createdTime>
+<generatorID>876A6CC7-896E-2327-3B2F-9220C6AE8DFB</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like (prenume, &apos;^[a-zA-Z .&apos;&apos;-]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="199ADC5E-F7A5-30DD-3B41-21BF29A42F57">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:56:35 UTC</createdTime>
+<generatorID>A14E6DE0-027E-81B2-5529-481D0AA54DA6</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>telefon_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(telefon, &apos;^07\d{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="787639CB-E197-385C-EF45-D98B9677307D">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:56:35 UTC</createdTime>
+<generatorID>9D24E274-C4BC-B312-2D24-442414F0F41B</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<constraintName>email_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<defaultValue>NULL</defaultValue>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="61808485-39E3-CDE5-CB9D-9BD9EFE2B8FB" name="Propietari_PK">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:56:35 UTC</createdTime>
+<generatorID>5F653909-0E46-14DC-9430-0357AE30795F</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B06B28E4-6EA7-8A64-20EB-DA392076C55E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A5B7C72-E5CB-C9C9-0E75-CE8C1FCA8DFA" name="telefon_unique">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:56:35 UTC</createdTime>
+<generatorID>B01418F2-1113-61D9-E72E-B1ECFB14F79D</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="199ADC5E-F7A5-30DD-3B41-21BF29A42F57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B44561C3-6492-3ECE-B033-A5B63A6889A5" name="email_unique">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 11:56:35 UTC</createdTime>
+<generatorID>A4DEDC1E-72D6-92A4-4E99-39549BBEA4EB</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="787639CB-E197-385C-EF45-D98B9677307D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

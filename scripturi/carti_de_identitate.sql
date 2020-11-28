@@ -100,9 +100,7 @@ INSERT INTO carti_de_identitate VALUES (
     (SELECT index_proprietar FROM proprietari WHERE nume = 'Balta' AND prenume = 'Gabriel')
 );
 
-
-
--- teste pentru constrangeri
+-- testarea constrangerilor
 -- cnp trebuie sa fie unique
 INSERT INTO carti_de_identitate VALUES (
     '1000000000008',
