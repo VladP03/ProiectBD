@@ -43,7 +43,7 @@
 <constraintName>serie_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>2</dataTypeSize>
 <checkConstraint>
 <implementationDef dbType="Generic Constraint" definition="regexp_like (serie, &apos;^[a-zA-Z .&apos;&apos;-]+$&apos;)"/>
@@ -60,7 +60,7 @@
 <constraintName>numar_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>6</dataTypeSize>
 <checkConstraint>
 <implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(numar, &apos;[0-9][0-9][0-9][0-9][0-9][0-9]&apos;)"/>
