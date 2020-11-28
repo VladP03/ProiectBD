@@ -29,7 +29,7 @@
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>13</dataTypeSize>
 <checkConstraint>
-<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(CNP, &apos;[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]&apos;)"/>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE ( cnp,  &apos;(1|2|5|6)[0-9][0-9](0|1)[0-9](0|1|2|3)[0-9](0|1|2|3|4|5)[0-9][0-9][0-9][0-9][0-9]&apos; ) );"/>
 </checkConstraint>
 <ownDataTypeParameters>13,,</ownDataTypeParameters>
 </Attribute>
