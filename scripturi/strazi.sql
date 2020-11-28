@@ -64,7 +64,7 @@ INSERT INTO strazi(denumire,cartier) VALUES (
 -- numele strazii trebuie sa contina doar litere
 INSERT INTO strazi(denumire,cartier) VALUES (
 	'Strad123132a Bas Ceaus',
-	'ABC3D'
+	'ABCD'
 );
 
 -- numele cartierului trebuie sa contina doar litere
