@@ -92,55 +92,61 @@ SELECT nume, prenume FROM proprietari prop
   WHERE marca = 'VW' and culoare = 'negru';
   
 -- afisam toate platile efectuate din 2019 pana in prezent
-SELECT id_plata, tip FROM modalitati_plata
+SELECT id_plata, tip FROM plati
  WHERE TO_CHAR(data_tranzactie,'YYYY') >= 2019;
  
 -- afisam toate platile efectuate numerar
-SELECT id_plata FROM modalitati_plata
+SELECT id_plata FROM plati
  WHERE tip = 'numerar';
  
 -- afisam toate platile mai mari de 550 lei
-SELECT id_plata FROM modalitati_plata
+SELECT id_plata FROM plati
  WHERE suma > 550;
  
 -- afisam cate plati s-au efectuat in total
-SELECT COUNT(id_plata) FROM modalitati_plata;
+SELECT COUNT(id_plata) FROM plati;
  
 -- afisam toate platile mai mari de 900 de lei efectuate din 2018 in prezent
-SELECT id_plata FROM modalitati_plata
+SELECT id_plata FROM plati
  WHERE TO_CHAR(data_tranzactie, 'YYYY') >= 2018 AND suma>900;
  
 -- afisam platile efectuate in luna martie din orice an
-SELECT id_plata FROM modalitati_plata
+SELECT id_plata FROM plati
  WHERE TO_CHAR(data_tranzactie, 'MON' ) = 'MAR';
+ 
+ -- afisam proprietarii care au platit 900 de lei
+SELECT nume, prenume FROM proprietari prop
+ JOIN plati ON (prop.index_proprietar = plati.index_proprietar)
+  WHERE suma = 900;
  
 -- afisam proprietarii si masinile care au rezervat locul de parcare in luna martie
 SELECT nume, prenume, masini.marca, masini.model FROM proprietari prop
  JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
- JOIN locuri_de_parcare loc ON (loc.index_proprietar = prop.index_proprietar)
+ JOIN locuri_de_parcare loc ON (loc.nr_inmatriculare = masini.nr_inmatriculare)
   WHERE TO_CHAR(data_inceput,'MON') = 'MAR';
   
 -- afisam proprietarii si masinile carora le expira locul de parcare in 2019
 SELECT nume, prenume, masini.marca, masini.model FROM proprietari prop
  JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
- JOIN locuri_de_parcare loc ON (loc.index_proprietar = prop.index_proprietar)
-  WHERE TO_CHAR(data_expirare,'YYYY') = 2019;
+ JOIN locuri_de_parcare loc ON (loc.nr_inmatriculare = masini.nr_inmatriculare)
+  WHERE TO_CHAR(data_expirare,'YY') = 20;
   
 -- afisam proprietarii care si-au achizionat locul pe 12 luni
 SELECT nume, prenume FROM proprietari prop
  JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
- JOIN locuri_de_parcare loc ON (loc.index_proprietar = prop.index_proprietar)
+ JOIN locuri_de_parcare loc ON (loc.nr_inmatriculare = masini.nr_inmatriculare)
   WHERE durata = 12;
   
 -- afisam CNP-ul persoanei care are locul de parcare cu numarul 5
 SELECT CNP FROM carti_de_identitate buletin
- JOIN locuri_de_parcare loc ON (buletin.index_proprietar = loc.index_proprietar)
+ JOIN masini ON (buletin.index_proprietar = masini.index_proprietar)
+ JOIN locuri_de_parcare loc ON (loc.nr_inmatriculare = masini.nr_inmatriculare)
   WHERE index_loc_parcare = 5;
   
 -- afisam persoanele si masinile persoanelor care au achizitionat un loc de parcare pe cel putin 12 luni si s-au nascut in in una dintre lunile februarie,martie,aprilie,mai
 SELECT nume, prenume, masini.marca, masini.model FROM proprietari prop
  JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
- JOIN locuri_de_parcare loc ON (prop.index_proprietar = loc.index_proprietar)
+ JOIN locuri_de_parcare loc ON (loc.nr_inmatriculare = masini.nr_inmatriculare)
  JOIN carti_de_identitate buletin ON (prop.index_proprietar = buletin.index_proprietar)
   WHERE loc.durata >= 12 AND TO_CHAR(data_nastere,'MON') IN ('FEB', 'MAR', 'APR'); 
 
@@ -149,13 +155,15 @@ SELECT distinct(cartier) FROM strazi;
 
 -- afisam numele si prenumele persoanei care detine un loc de parcare in cartierul 'T Vladimirescu'
 SELECT nume,prenume FROM Proprietari prop
- JOIN locuri_de_parcare loc ON (prop.index_proprietar = loc.index_proprietar)
+ JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
+ JOIN locuri_de_parcare loc ON (loc.nr_inmatriculare = masini.nr_inmatriculare)
  JOIN Strazi ON (loc.index_strada = strazi.index_strada)
   WHERE cartier = 'T Vladimirescu';
 
 -- afisam numele si prenumele persoanei care detine un loc de parcare in cartierul 'Agronomie'  
 SELECT nume,prenume from Proprietari prop
- JOIN locuri_de_parcare loc ON (prop.index_proprietar = loc.index_proprietar)
+ JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
+ JOIN locuri_de_parcare loc ON (loc.nr_inmatriculare = masini.nr_inmatriculare)
  JOIN Strazi ON (loc.index_strada = strazi.index_strada)
   WHERE cartier = 'Agronomie';
   
@@ -165,7 +173,7 @@ SELECT denumire FROM strazi;
 -- afisam numele, prenumele si numarul de inmatriculare persoanei care detine un loc de parcare 'Strada Iepurilor'  
 SELECT nume,prenume, masini.nr_inmatriculare FROM Proprietari prop
  JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
- JOIN locuri_de_parcare loc ON (prop.index_proprietar = loc.index_proprietar)
+ JOIN locuri_de_parcare loc ON (loc.nr_inmatriculare = masini.nr_inmatriculare)
  JOIN Strazi ON (loc.index_strada = strazi.index_strada)
   WHERE denumire = 'Strada Iepurilor';
 
@@ -179,5 +187,3 @@ SELECT COUNT(index_loc_parcare) from locuri_de_parcare loc
 SELECT marca, model FROM masini
  JOIN proprietari prop ON (prop.index_proprietar = masini.index_proprietar)
   WHERE nume = 'Paraschiv' AND prenume = 'Vlad';
-
-
