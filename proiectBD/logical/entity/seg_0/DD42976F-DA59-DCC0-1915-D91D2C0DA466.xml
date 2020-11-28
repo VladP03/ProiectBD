@@ -33,6 +33,40 @@
 </checkConstraint>
 <ownDataTypeParameters>13,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="serie" id="FA6B8063-5EF7-6041-BBA8-0505DB5A2B3C">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 18:03:12 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
+</engineerTo>
+<constraintName>serie_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like (serie, &apos;^[a-zA-Z .&apos;&apos;-]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numar" id="FA7C6F6A-B1B3-0D0C-68F0-C0DE9580CB75">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 18:03:18 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
+</engineerTo>
+<constraintName>numar_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(numar, &apos;[0-9][0-9][0-9][0-9][0-9][0-9]&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="data_nastere" id="68DD0C4B-80BE-A9BA-45E5-5E747EB37DD0">
 <createdBy>Vlad</createdBy>
 <createdTime>2020-11-01 09:08:51 UTC</createdTime>
@@ -75,19 +109,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>40</dataTypeSize>
 <ownDataTypeParameters>40,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="serie_nr" id="D2703CCD-A11F-5D9C-311C-714096C8F49A">
-<createdBy>Vlad</createdBy>
-<createdTime>2020-11-06 11:35:36 UTC</createdTime>
-<ownerDesignName>proiectBD</ownerDesignName>
-<engineerTo>
-<item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="localitate" id="9CBD103B-6B9F-8042-C78A-5F79835FA97D">
 <createdBy>Vlad</createdBy>
@@ -136,16 +157,17 @@
 <attributeRef>B03DD53D-602F-5C7E-5D9D-F8118D58A9DB</attributeRef>
 </usedAttributes>
 </identifier>
-<identifier id="DDA3EC5F-4D2F-3750-CCBB-EE712AB56F0C" name="serie_nt_unique">
+<identifier id="14F1143D-85B7-3EED-4168-BBE6B18F97BA" name="serie_numar_unique">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-08 15:32:59 UTC</createdTime>
+<createdTime>2020-11-28 18:14:08 UTC</createdTime>
 <ownerDesignName>proiectBD</ownerDesignName>
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
-<newElementsIDs>D2703CCD-A11F-5D9C-311C-714096C8F49A</newElementsIDs>
+<newElementsIDs>FA7C6F6A-B1B3-0D0C-68F0-C0DE9580CB75,FA6B8063-5EF7-6041-BBA8-0505DB5A2B3C</newElementsIDs>
 <usedAttributes>
-<attributeRef>D2703CCD-A11F-5D9C-311C-714096C8F49A</attributeRef>
+<attributeRef>FA7C6F6A-B1B3-0D0C-68F0-C0DE9580CB75</attributeRef>
+<attributeRef>FA6B8063-5EF7-6041-BBA8-0505DB5A2B3C</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

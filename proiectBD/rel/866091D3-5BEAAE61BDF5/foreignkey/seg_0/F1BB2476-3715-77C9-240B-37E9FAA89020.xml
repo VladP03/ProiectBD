@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F1BB2476-3715-77C9-240B-37E9FAA89020" containerWithKeyObject="2EB8497C-FBFB-AF72-E6A7-E00ED745E444" localFKIndex="8C7D9D3A-02E9-F6B7-2976-65329185E36E" name="proprietari_buletine_fk">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-11-28 18:37:24 UTC</createdTime>
+<generatorID>D90531AD-AD70-5175-BFAD-AB2C1DF7B83D</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<referredTableLongName>Proprietari</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C1E8360C-4B66-1278-00DB-DF494D042DAA</referredTableID>
+<keyObject>A2A57DE8-39F7-C558-3BE9-1C5EC7924AF7</keyObject>
+<referredKeyID>A2A57DE8-39F7-C558-3BE9-1C5EC7924AF7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>index_proprietar</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
