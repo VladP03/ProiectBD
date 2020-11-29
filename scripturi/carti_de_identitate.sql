@@ -1,7 +1,7 @@
 -- 10 inserari bune
 
 INSERT INTO carti_de_identitate VALUES (
-    '1000000000000',
+    '1990331220000',
     'IS',
     '123456',
     TO_DATE('31.03.1999', 'DD.MM.YYYY'),
@@ -12,7 +12,7 @@ INSERT INTO carti_de_identitate VALUES (
 );
 
 INSERT INTO carti_de_identitate VALUES (
-    '1000000000001',
+    '2991018220001',
     'IS',
     '097643',
     TO_DATE('18.10.1999', 'DD.MM.YYYY'),
@@ -23,7 +23,7 @@ INSERT INTO carti_de_identitate VALUES (
 );
 
 INSERT INTO carti_de_identitate VALUES (
-    '1000000000002',
+    '1990531220002',
     'IS',
     '523456',
     TO_DATE('31.05.1999', 'DD.MM.YYYY'),
@@ -34,7 +34,7 @@ INSERT INTO carti_de_identitate VALUES (
 );
 
 INSERT INTO carti_de_identitate VALUES (
-    '1000000000003',
+    '1991226220003',
     'IS',
     '123459',  
     TO_DATE('26.12.1999', 'DD.MM.YYYY'),
@@ -45,7 +45,7 @@ INSERT INTO carti_de_identitate VALUES (
 );
 
 INSERT INTO carti_de_identitate VALUES (
-    '1000000000004',
+    '1990206220004',
     'IS',
     '126456',   
     TO_DATE('06.02.1999', 'DD.MM.YYYY'),
@@ -56,7 +56,7 @@ INSERT INTO carti_de_identitate VALUES (
 );
 
 INSERT INTO carti_de_identitate VALUES (
-    '1000000000005',
+    '2990705220005',
     'IS',
     '120456',
     TO_DATE('05.07.1999', 'DD.MM.YYYY'),
@@ -67,7 +67,7 @@ INSERT INTO carti_de_identitate VALUES (
 );
 
 INSERT INTO carti_de_identitate VALUES (
-    '1000000000006',
+    '6000218220006',
     'IS',
     '123496',
     TO_DATE('18.02.2000', 'DD.MM.YYYY'),
@@ -78,10 +78,10 @@ INSERT INTO carti_de_identitate VALUES (
 );
 
 INSERT INTO carti_de_identitate VALUES (
-    '1000000000007',
+    '1990501220007',
     'IS',
     '323456',
-    TO_DATE('1.05.1999', 'DD.MM.YYYY'),
+    TO_DATE('01.05.1999', 'DD.MM.YYYY'),
     'M',
     'Strada Fulger',
     'Iasi',
@@ -89,7 +89,7 @@ INSERT INTO carti_de_identitate VALUES (
 );
 
 INSERT INTO carti_de_identitate VALUES (
-    '1000000000008',
+    '1990722220008',
     'IS',
     '123406',
     TO_DATE('22.07.1999', 'DD.MM.YYYY'),
@@ -100,7 +100,7 @@ INSERT INTO carti_de_identitate VALUES (
 );
 
 INSERT INTO carti_de_identitate VALUES (
-    '1000000000009',
+    '1991029220009',
     'IS',
     '823456',
     TO_DATE('29.10.1999', 'DD.MM.YYYY'),
