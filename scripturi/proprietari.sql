@@ -68,11 +68,25 @@ INSERT INTO proprietari(nume,prenume,telefon) VALUES (
     '0749899645'
 );
 
+-- 2 inserari pentru alte teste
+INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
+    'Costache',
+    'Adrian',
+    '0768204650',
+    'adriancostache@gmail.com'
+);
+
+INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
+    'Mircea',
+    'Bravo',
+    '0768204999',
+    'mirceabravo@gmail.com'
+);
+
 
 
 
 -- pentru testarea constrangerilor
-
 -- telefonul exista deja in tabela
 INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
     'Adrian',
@@ -97,11 +111,11 @@ INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
     'a@bc'
 );
 
--- telefonul nu incepe cu 07
+-- telefonul nu incepe cu 0
 INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
     'Adrian',
     'Costache',
-    '0912345678',
+    '9912345678',
     'hahaha@gmail.com'
 );
 
@@ -135,13 +149,4 @@ INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
     'Costache0',
     '0712345624',
     'hahaha@gmail.com'
-);
-
-
--- o inserare pentru alte teste
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Costache',
-    'Adrian',
-    '0768204650',
-    'adriancostache@gmail.com'
 );
