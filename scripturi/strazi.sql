@@ -54,8 +54,7 @@ INSERT INTO strazi(denumire,cartier) VALUES (
 INSERT INTO strazi(denumire,cartier) VALUES (
 	'Strada Bas Ceaus',
 	'ABCD'
-);
-
+); -- aceasta va functiona
 INSERT INTO strazi(denumire,cartier) VALUES (
 	'Strada Bas Ceaus',
 	'ABCD'
