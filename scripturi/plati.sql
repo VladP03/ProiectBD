@@ -79,6 +79,14 @@ INSERT INTO plati(tip, data_tranzactie, suma, index_proprietar) VALUES (
     (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
 );
 
+-- data platii trebuie sa fie mai mica ca data curenta
+INSERT INTO plati(tip, data_tranzactie, suma, index_proprietar) VALUES (
+	'bistari',
+	TO_DATE('31.03.2021','DD.MM.YYYY'),
+	500,
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
+);
+
 -- suma poate fi doar 500, 900 sau 1700
 INSERT INTO plati(tip, data_tranzactie, suma, index_proprietar) VALUES (
 	'numerar',
