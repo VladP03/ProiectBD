@@ -172,6 +172,17 @@ INSERT INTO carti_de_identitate VALUES (
     (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
 );
 
+-- data nasterii sa fie mai mica ca data curenta
+INSERT INTO carti_de_identitate VALUES (
+    '1990331220000', -- cnp-ul este deja folosit
+    'IS',
+    '999999',
+    TO_DATE('22.07.2021', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
+);
 
 -- sex-ul sa fie M/F
 INSERT INTO carti_de_identitate VALUES (
