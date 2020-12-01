@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_carti_de_identitate_data_nastere" directorySegmentName="seg_0" id="3D72D49B-A6C6-0C44-F51F-1063A9F6BD1B">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 15:19:27 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+ IF ( :new.data_nastere > SYSDATE )
+  THEN
+   RAISE_APPLICATION_ERROR ( -20001,
+   		'Data invalida: ' || TO_CHAR ( :new.data_nastere, 'DD.MM.YYYY' ) || ' trebuie sa fie mai mica decat data curenta.' );
+   END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>3DAD7386-AFB5-5872-B409-06AEF3D4289E</table>
+</TriggerOraclev10g>
