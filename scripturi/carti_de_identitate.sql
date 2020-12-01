@@ -110,12 +110,13 @@ INSERT INTO carti_de_identitate VALUES (
     (SELECT index_proprietar FROM proprietari WHERE nume = 'Balta' AND prenume = 'Gabriel')
 );
 
+
 -- testarea constrangerilor
 -- cnp trebuie sa fie unique
 INSERT INTO carti_de_identitate VALUES (
-    '1000000000008',
+    '1990331220000', -- cnp-ul este deja folosit
     'IS',
-    '123457',
+    '999999',
     TO_DATE('22.07.1999', 'DD.MM.YYYY'),
     'M',
     'Strada Iepurilor',
@@ -123,15 +124,89 @@ INSERT INTO carti_de_identitate VALUES (
     (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
 );
 
--- serie_nr trebuie sa fie unique
+-- cnp-ul trebuie sa inceapa cu 1/2/5/6
 INSERT INTO carti_de_identitate VALUES (
-    '1000000600008',
+    '9990331220099',
     'IS',
-    123456',
+    '999999',
     TO_DATE('22.07.1999', 'DD.MM.YYYY'),
     'M',
     'Strada Iepurilor',
     'Iasi',
     (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
 );
+
+-- luna din cnp e intre 01-12
+INSERT INTO carti_de_identitate VALUES (
+    '1992331220099',
+    'IS',
+    '999999',
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
+);
+
+-- seria sa contina doar 2 litere
+INSERT INTO carti_de_identitate VALUES (
+    '1990331220000',
+    'I9',
+    '999999',
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
+);
+
+-- numarul sa contina doar 6 cifre
+INSERT INTO carti_de_identitate VALUES (
+    '1990331220000',
+    'I9',
+    '9999A9',
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
+);
+
+
+-- sex-ul sa fie M/F
+INSERT INTO carti_de_identitate VALUES (
+    '1990331220000',
+    'IS',
+    '123457',
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'A',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
+);
+
+-- seria si nr sa fie unic -> pot sa am acelasi numar pe 2 serii diferite
+INSERT INTO carti_de_identitate VALUES (
+    '1990331220099',
+    'NT',
+    '123457', -- numarul deja exista pe seria IS
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
+);
+
+INSERT INTO carti_de_identitate VALUES (
+    '1990331220999',
+    'NT',
+    '123457',
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Mircea' AND prenume = 'Bravo')
+);
+
+
 
