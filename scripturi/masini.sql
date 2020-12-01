@@ -6,7 +6,7 @@ INSERT INTO masini VALUES (
 	'NT-01-ANV',
 	'negru',
 	1989,
-	2014,
+    TO_DATE('10.10.2014', 'DD.MM.YYYY'),
 	(SELECT index_proprietar FROM proprietari WHERE nume = 'Paraschiv' AND prenume = 'Vlad')
 );
 
@@ -16,7 +16,7 @@ INSERT INTO masini VALUES (
 	'SV-99-DIA',
 	'alb',
 	1598,
-	2001,
+    	TO_DATE('03.03.2001', 'DD.MM.YYYY'),
 	(SELECT index_proprietar FROM proprietari WHERE nume = 'Buliga' AND prenume = 'Diana')
 );
 
@@ -26,7 +26,7 @@ INSERT INTO masini VALUES (
 	'BT-09-BUT',
 	'maro',
 	1600,
-	2014,
+    	TO_DATE('17.05.2015', 'DD.MM.YYYY'),
 	(SELECT index_proprietar FROM proprietari WHERE nume = 'Baltariu' AND prenume = 'John')
 );
 
@@ -36,7 +36,7 @@ INSERT INTO masini VALUES (
 	'BT-19-SIL',
 	'negru',
 	1989,
-	2014,
+    	TO_DATE('21.02.2018', 'DD.MM.YYYY'),
 	(SELECT index_proprietar FROM proprietari WHERE nume = 'Butnaru' AND prenume = 'Silviu')
 );
 
@@ -46,7 +46,7 @@ INSERT INTO masini VALUES (
 	'SV-99-IUL',
 	'gri',
 	1398,
-	2001,
+    	TO_DATE('12.12.2001', 'DD.MM.YYYY'),
 	(SELECT index_proprietar FROM proprietari WHERE nume = 'Prelipcean' AND prenume = 'Iulian')
 );
 
@@ -56,7 +56,7 @@ INSERT INTO masini VALUES (
 	'NT-18-BGA',
 	'negru',
 	1899,
-	2007,
+    	TO_DATE('17.06.2007', 'DD.MM.YYYY'),
 	(SELECT index_proprietar FROM proprietari WHERE nume = 'Arcana' AND prenume = 'Geanina')
 );
 
@@ -66,7 +66,7 @@ INSERT INTO masini VALUES (
 	'IS-99-RAZ',
 	'gri',
 	2198,
-	2018,
+    	TO_DATE('13.04.2018', 'DD.MM.YYYY'),
 	(SELECT index_proprietar FROM proprietari WHERE nume = 'Paval' AND prenume = 'Mihaela')
 );
 
@@ -76,7 +76,7 @@ INSERT INTO masini VALUES (
 	'IS-10-RAZ',
 	'rosu',
 	1989,
-	2014,
+    	TO_DATE('28.08.2012', 'DD.MM.YYYY'),
 	(SELECT index_proprietar FROM proprietari WHERE nume = 'Bejenariu' AND prenume = 'Razvan')
 );
 
@@ -86,7 +86,7 @@ INSERT INTO masini VALUES (
 	'IS-01-ALB',
 	'verde',
 	1989,
-	2016,
+    	TO_DATE('12.05.2016', 'DD.MM.YYYY'),
 	(SELECT index_proprietar FROM proprietari WHERE nume = 'Toscariu' AND prenume = 'Alberto')
 );
 
@@ -96,7 +96,7 @@ INSERT INTO masini VALUES (
 	'BT-01-GAB',
 	'maro',
 	1899,
-	2012,
+    	TO_DATE('19.03.2014', 'DD.MM.YYYY'),
 	(SELECT index_proprietar FROM proprietari WHERE nume = 'Balta' AND prenume = 'Gabriel')
 );
 
@@ -106,9 +106,10 @@ INSERT INTO masini VALUES (
 	'B-111-ANV',
 	'gri',
 	1899,
-	2017,
+    	TO_DATE('14.09.2017', 'DD.MM.YYYY'),
 	(SELECT index_proprietar FROM proprietari WHERE nume = 'Paraschiv' AND prenume = 'Vlad')
 );
+
 
 
 -- testarea constrangerilor
