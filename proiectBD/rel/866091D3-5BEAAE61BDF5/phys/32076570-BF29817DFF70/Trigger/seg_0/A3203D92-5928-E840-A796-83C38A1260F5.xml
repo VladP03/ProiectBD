@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_masini_data_fabricatie" directorySegmentName="seg_0" id="A3203D92-5928-E840-A796-83C38A1260F5">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:25:17 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+ IF ( :new.data_fabricatie <= SYSDATE )
+  THEN
+   RAISE_APPLICATION_ERROR ( -20001,
+   		'Data invalida: ' || TO_CHAR ( :new.data_fabricatie, 'DD.MM.YYYY' ) || ' trebuie sa fie mai mica decat data curenta.' );
+   END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>CE8B6FE3-1ABF-E627-6D47-FA7FF49526A2</table>
+</TriggerOraclev10g>

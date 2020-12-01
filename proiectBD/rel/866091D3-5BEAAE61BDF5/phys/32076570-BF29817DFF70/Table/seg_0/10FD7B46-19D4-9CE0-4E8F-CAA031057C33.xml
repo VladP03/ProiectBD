@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Plati" directorySegmentName="seg_0" id="10FD7B46-19D4-9CE0-4E8F-CAA031057C33">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="data_tranzactie" id="673598DD-50CA-9268-2A7C-133007781022">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="index_proprietar" id="92B5B144-0F9D-E420-76CA-3F90A9336BC8">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_plata" id="B9E1C052-FB1F-6516-7F08-36517BC2DD55">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="tip" id="D0A759E2-7028-671F-24A1-1FED3C942C0A">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="suma" id="FB3C5E20-1ACF-EA9F-DF2C-CC33FE8D1175">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="proprietari_plati" id="CDE21B4E-75B3-C82F-3D9A-EDE4ECCC587A">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Modalitati_plata_PK" id="A6945305-AE00-80B6-8626-AE9D9AD62BAE">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

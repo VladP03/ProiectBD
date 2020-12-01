@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Proprietari" directorySegmentName="seg_0" id="B855B5F5-E022-B9F8-59A9-BC8161F049F4">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="email" id="1C17468F-426F-864F-1B05-7EA652A7F9D6">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<defaultValue>NULL</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="prenume" id="20A1192F-803A-B5AC-FC43-E9CA65702FD0">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="index_proprietar" id="54F659FC-C1C3-8C77-2F5C-CB754812883F">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="telefon" id="55254E9F-A514-2E26-C336-184A5581BB79">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nume" id="7C159978-D097-A65D-3BF2-1460D7EEA6F4">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Propietari_PK" id="20C71470-E5E9-4ABA-D048-28DCF61E3D90">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="email_unique" id="6DD4F4E4-8DCE-5B54-B81E-AF7C8FDD3B00">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="telefon_unique" id="B4DAF80C-60BA-1BEB-EE21-547EED5C0B45">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

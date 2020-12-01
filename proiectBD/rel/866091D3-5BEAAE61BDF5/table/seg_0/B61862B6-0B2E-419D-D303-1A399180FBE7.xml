@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F40A2909-86B9-4C70-D0FD-A6ABE3CEB5EB" name="Locuri_de_parcare">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B61862B6-0B2E-419D-D303-1A399180FBE7" name="Locuri_de_parcare">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 19:03:09 UTC</createdTime>
+<createdTime>2020-12-01 13:23:03 UTC</createdTime>
 <generatorID>28D27CD7-E117-0BED-3430-FE3FDAC8BBC7</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="index_loc_parcare" id="7791649B-8985-59C3-8DF2-F5C196DDE3F5">
+<Column name="index_loc_parcare" id="F583B0C9-9304-237F-9F01-EC67CC8B22D5">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 19:03:09 UTC</createdTime>
+<createdTime>2020-12-01 13:23:03 UTC</createdTime>
 <generatorID>F8556E25-943D-29B5-D0F0-023BCD010DC4</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -23,9 +23,9 @@
 <autoIncrementSequenceName>index_loc_parcare_seq</autoIncrementSequenceName>
 <autoIncrementTriggerName>index_loc_parcare_trg</autoIncrementTriggerName>
 </Column>
-<Column name="durata" id="5BC88DC4-DE42-4925-03AF-C4B2ACCF2B4F">
+<Column name="durata" id="3D71D0F5-2567-EEE7-EB7B-99DC4FBFF190">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 19:03:09 UTC</createdTime>
+<createdTime>2020-12-01 13:23:03 UTC</createdTime>
 <generatorID>A0A9F001-C3C1-D304-54AE-5BE8F67A0DF8</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>durata_CK</constraintName>
@@ -41,9 +41,9 @@
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="data_inceput" id="6289AF59-A5EC-F764-2F8C-487E227B0E48">
+<Column name="data_inceput" id="06D0064C-1CA6-93A5-1EB3-259841DE2018">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 19:03:09 UTC</createdTime>
+<createdTime>2020-12-01 13:23:03 UTC</createdTime>
 <generatorID>D09691A5-66B6-B39F-9873-B6F151737165</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -52,9 +52,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="data_expirare" id="C31D8A02-7012-B815-C613-CCFA84E14A98">
+<Column name="data_expirare" id="CB682686-DAD9-9307-3880-579C8F95583B">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 19:03:09 UTC</createdTime>
+<createdTime>2020-12-01 13:23:03 UTC</createdTime>
 <generatorID>448AE57A-1DFF-CF96-C715-A9C9F1ABDA8A</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -63,9 +63,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="index_strada" id="BE08DFBC-70D7-E53E-F249-88CF98283AEB">
+<Column name="index_strada" id="696D8C7D-BB94-4572-DF3E-6BAB245D01AC">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 19:03:09 UTC</createdTime>
+<createdTime>2020-12-01 13:23:03 UTC</createdTime>
 <generatorID>FEC05611-4E9F-F913-8FF4-59A34145EE81</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -76,12 +76,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="05FDF186-8E85-41D1-A618-DCF0F1EDAB85" referredColumn="F796EC30-61D9-60DD-CEF6-F097A5772D34"/>
+<colAssociation fkAssociation="275D9DCC-8263-3D4B-9820-D8D0F15D7BE0" referredColumn="033782B6-AE1D-606A-4998-B3C96B6595E4"/>
 </associations>
 </Column>
-<Column name="id_plata" id="3AF3B20F-0389-1665-A67A-1A70CC94C351">
+<Column name="id_plata" id="539B673F-ED04-73A9-B387-E749DA9C8742">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 19:03:09 UTC</createdTime>
+<createdTime>2020-12-01 13:23:03 UTC</createdTime>
 <generatorID>B4AF9E44-8FE8-924F-A6AF-067828C8F7CD</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -92,12 +92,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="727F53FA-842D-6A5A-E0BE-B8224B3A3279" referredColumn="E2CFB2F2-2AB8-F290-D547-BF0193B16C4C"/>
+<colAssociation fkAssociation="B450C136-F873-9487-F440-76251FD82502" referredColumn="B9E1C052-FB1F-6516-7F08-36517BC2DD55"/>
 </associations>
 </Column>
-<Column name="nr_inmatriculare" id="ED9E45EC-B17C-71CD-174A-0D8965475C47">
+<Column name="nr_inmatriculare" id="8F1D078E-AE64-807E-A2BA-9473A98B3027">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 19:03:09 UTC</createdTime>
+<createdTime>2020-12-01 13:23:03 UTC</createdTime>
 <generatorID>05DDA0FC-066A-0D80-204C-B8E093D02654</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -108,76 +108,76 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="8BEB2B8F-A2F8-6F84-5865-EC95FB723AC1" referredColumn="D307CF82-FEF4-CBA9-F3E7-A6C45A318B3F"/>
+<colAssociation fkAssociation="9671B49A-905A-49D1-F924-96BCA9D7B2E0" referredColumn="F5AC384F-7400-6A5F-19A5-0B58C427F7D4"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="41B05AD4-B763-9A56-D1B4-FCA51C1A7C70" name="Locuri_de_parcare_PK">
+<ind_PK_UK id="25097C11-D05A-36D1-A90A-000806E38A4B" name="Locuri_de_parcare_PK">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 19:03:09 UTC</createdTime>
+<createdTime>2020-12-01 13:23:03 UTC</createdTime>
 <generatorID>C1191D3C-3C5A-6429-3FDD-C09545660538</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="7791649B-8985-59C3-8DF2-F5C196DDE3F5"/>
+<colUsage columnID="F583B0C9-9304-237F-9F01-EC67CC8B22D5"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="371D10FC-8C5C-0890-16DB-3515E3580ADC" name="Locuri_de_parcare__IDX">
+<ind_PK_UK id="DF24B5E0-E41C-B84B-18A2-B512E58F6BD2" name="Locuri_de_parcare__IDX">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 19:03:09 UTC</createdTime>
+<createdTime>2020-12-01 13:23:03 UTC</createdTime>
 <ownerDesignName>proiectBD</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <relationGeneratorID>EE5BDDFC-9B6F-08CF-07ED-E603FB147F07</relationGeneratorID>
 <indexColumnUsage>
-<colUsage columnID="ED9E45EC-B17C-71CD-174A-0D8965475C47"/>
+<colUsage columnID="8F1D078E-AE64-807E-A2BA-9473A98B3027"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E89FA495-11D9-784F-248C-D40A6F9712CB" name="Locuri_de_parcare__IDXv1v1">
+<ind_PK_UK id="E80EB771-71CD-9B25-3E1D-B173D0FCE18F" name="Locuri_de_parcare__IDXv1v1">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 19:03:09 UTC</createdTime>
+<createdTime>2020-12-01 13:23:03 UTC</createdTime>
 <ownerDesignName>proiectBD</ownerDesignName>
 <indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <relationGeneratorID>76EA6BA7-A2F2-58B6-671D-30AA4FED0D97</relationGeneratorID>
 <indexColumnUsage>
-<colUsage columnID="3AF3B20F-0389-1665-A67A-1A70CC94C351"/>
+<colUsage columnID="539B673F-ED04-73A9-B387-E749DA9C8742"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="553A0F2B-DE41-8CE9-2B69-E00EE6E743A2" name="masini_locuri_parcare">
+<ind_PK_UK id="F421F080-897C-48D4-0D42-C3245233D3EB" name="masini_locuri_parcare">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 19:03:09 UTC</createdTime>
+<createdTime>2020-12-01 13:23:03 UTC</createdTime>
 <generatorID>EE5BDDFC-9B6F-08CF-07ED-E603FB147F07</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="ED9E45EC-B17C-71CD-174A-0D8965475C47"/>
+<colUsage columnID="8F1D078E-AE64-807E-A2BA-9473A98B3027"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="992E18C7-44A5-C7A4-518D-DE5451CDA342" name="modalitati_plata_parcare">
+<ind_PK_UK id="471E5100-419E-E064-E968-D6A44534B322" name="modalitati_plata_parcare">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 19:03:09 UTC</createdTime>
+<createdTime>2020-12-01 13:23:03 UTC</createdTime>
 <generatorID>76EA6BA7-A2F2-58B6-671D-30AA4FED0D97</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="3AF3B20F-0389-1665-A67A-1A70CC94C351"/>
+<colUsage columnID="539B673F-ED04-73A9-B387-E749DA9C8742"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9B711237-6FD5-7DB6-ABF6-D914B6B46FB1" name="strazi_locuri_de_parcare">
+<ind_PK_UK id="6DBC7EA5-6B04-7EA4-3F97-371DB6874891" name="strazi_locuri_de_parcare">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-11-28 19:03:09 UTC</createdTime>
+<createdTime>2020-12-01 13:23:03 UTC</createdTime>
 <generatorID>A94B480C-2DD3-A548-F8CD-2FDC3F13BC05</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="BE08DFBC-70D7-E53E-F249-88CF98283AEB"/>
+<colUsage columnID="696D8C7D-BB94-4572-DF3E-6BAB245D01AC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

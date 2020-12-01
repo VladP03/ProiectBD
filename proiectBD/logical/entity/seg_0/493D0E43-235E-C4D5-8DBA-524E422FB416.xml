@@ -101,7 +101,7 @@
 </rangeDef>
 </listOfRanges>
 </Attribute>
-<Attribute name="an_fabricatie" id="764CAD52-95F6-89F9-9BA5-14D5B187183E">
+<Attribute name="data_fabricatie" id="764CAD52-95F6-89F9-9BA5-14D5B187183E">
 <createdBy>Vlad</createdBy>
 <createdTime>2020-11-01 09:04:12 UTC</createdTime>
 <ownerDesignName>proiectBD</ownerDesignName>
@@ -111,9 +111,8 @@
 <constraintName>an_fabricatie_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="index_proprietar" id="6B453039-4194-1104-89E1-3F3132EBEB76">
 <createdBy>Vlad</createdBy>

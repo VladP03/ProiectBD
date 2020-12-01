@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Masini" directorySegmentName="seg_0" id="CE8B6FE3-1ABF-E627-6D47-FA7FF49526A2">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="capacitate_motor" id="0ACF85FA-D3B6-5220-751D-46DDCB5EBBD0">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="marca" id="1E159AA1-B515-954B-D551-A242D5F13E63">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="index_proprietar" id="20183AE6-A807-4E6E-EFBA-B0261D2C7860">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_fabricatie" id="598A0E80-C172-975F-F939-F6ED95844571">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="model" id="6A8F2E2A-AC48-55E1-76C7-3B0A86ABE736">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="culoare" id="6B986B64-2C6E-EC9E-9AE2-90D9FD69CD62">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nr_inmatriculare" id="F5AC384F-7400-6A5F-19A5-0B58C427F7D4">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="proprietari_masini" id="A909E176-C0D4-BDBB-156D-042615BFF8E5">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="nr_inmatriculare_unique" id="112B876E-216B-12CE-4D64-9630D9F1B957">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-01 13:24:50 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>
