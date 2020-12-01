@@ -6,7 +6,7 @@ INSERT INTO masini VALUES (
 	'NT-01-ANV',
 	'negru',
 	1989,
-    TO_DATE('10.10.2014', 'DD.MM.YYYY'),
+    	TO_DATE('10.10.2014', 'DD.MM.YYYY'),
 	(SELECT index_proprietar FROM proprietari WHERE nume = 'Paraschiv' AND prenume = 'Vlad')
 );
 
@@ -113,57 +113,78 @@ INSERT INTO masini VALUES (
 
 
 -- testarea constrangerilor
+-- marca contine cifre
+INSERT INTO masini VALUES (
+	'Pors4che',
+	'911',
+	'B-999-ANV',
+	'negru',
+	1989,
+    	TO_DATE('10.10.2014', 'DD.MM.YYYY'),
+	(SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
+);
+
 -- numarul de inmatriculare se afla deja in tabela
 INSERT INTO masini VALUES (
-	'BMW',
-	'X7',
-	'B-01-ANV',
+	'Porsche',
+	'911',
+	'NT-01-ANV',
 	'negru',
-	3000,
-	2020,
-	(SELECT index_proprietar FROM proprietari WHERE nume = 'Paraschiv' AND prenume = 'Vlad')
+	1989,
+    	TO_DATE('10.10.2014', 'DD.MM.YYYY'),
+	(SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
 );
 
 -- numarul de inmatriculare sa fie in una din formele : L-DD-LLL, L-DDD-LLL, LL-DD-LLL ( L-litera, D-cifra )
 INSERT INTO masini VALUES (
-	'BMW',
-	'X7',
-	'B-1-ANV',
+	'Porsche',
+	'911',
+	'NT-1-ANV',
 	'negru',
-	3000,
-	2020,
-	(SELECT index_proprietar FROM proprietari WHERE nume = 'Paraschiv' AND prenume = 'Vlad')
+	1989,
+    	TO_DATE('10.10.2014', 'DD.MM.YYYY'),
+	(SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
+);
+INSERT INTO masini VALUES (
+	'Porsche',
+	'911',
+	'NT-111-ANV',
+	'negru',
+	1989,
+    	TO_DATE('10.10.2014', 'DD.MM.YYYY'),
+	(SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
 );
 
--- capacitatea motor sa fie intre 1 si 9999
+-- capacitatea motor sa fie intre 0 si 9999
 INSERT INTO masini VALUES (
-	'BMW',
-	'X7',
-	'NT-01-ANV',
+	'Porsche',
+	'911',
+	'B-999-ANV',
 	'negru',
 	99999,
-	2020,
-	(SELECT index_proprietar FROM proprietari WHERE nume = 'Paraschiv' AND prenume = 'Vlad')
+    	TO_DATE('10.10.2014', 'DD.MM.YYYY'),
+	(SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
 );
+
 
 -- culoarea sa nu contina cifre
 INSERT INTO masini VALUES (
-	'BMW',
-	'X7',
-	'B-01-ANV',
-	'neg4ru',
-	3000,
-	2020,
-	(SELECT index_proprietar FROM proprietari WHERE nume = 'Paraschiv' AND prenume = 'Vlad')
+	'Porsche',
+	'911',
+	'B-999-ANV',
+	'negr4u',
+	9999,
+    	TO_DATE('10.10.2014', 'DD.MM.YYYY'),
+	(SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
 );
 
--- an fabricatie sa fie intre 1950 si 2020
+-- data fabricatie sa fie mai mica decat data curenta
 INSERT INTO masini VALUES (
-	'BMW',
-	'X7',
-	'B-01-ANV',
-	'negru',
-	3000,
-	2022,
-	(SELECT index_proprietar FROM proprietari WHERE nume = 'Paraschiv' AND prenume = 'Vlad')
-); 
+	'Porsche',
+	'911',
+	'B-999-ANV',
+	'negr4u',
+	9999,
+    	TO_DATE('10.10.2021', 'DD.MM.YYYY'),
+	(SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
+);
