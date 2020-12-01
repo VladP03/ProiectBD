@@ -427,3 +427,49 @@ INSERT INTO locuri_de_parcare(durata, data_inceput, data_expirare, nr_inmatricul
       JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
       WHERE nr_inmatriculare = 'BT-01-GAB')
 );
+
+-- testarea constrangerei
+-- numarul de inmatriculare nu exista
+-- numarul de inmatriculare nu exista
+INSERT INTO locuri_de_parcare(durata, data_inceput, data_expirare, nr_inmatriculare, index_strada, id_plata) VALUES (
+    -- durata
+    (SELECT CASE suma
+        WHEN 500 THEN 6
+        WHEN 900 then 12
+        WHEN 1700 then 24
+    END AS durata from plati
+      JOIN proprietari prop ON (prop.index_proprietar = plati.index_proprietar)
+      JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
+      WHERE nr_inmatriculare = 'IS-01-GAB'),
+     
+     -- data_inceput
+    (SELECT TO_DATE(data_tranzactie,'DD.MM.YYYY') FROM plati
+      JOIN proprietari prop ON (prop.index_proprietar = plati.index_proprietar)
+      JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
+      WHERE nr_inmatriculare = 'IS-01-GAB'),
+    
+    -- data_expirare
+    ADD_MONTHS( (SELECT TO_DATE(data_tranzactie,'DD.MM.YYYY') FROM plati
+                 JOIN proprietari prop ON (prop.index_proprietar = plati.index_proprietar)
+                 JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
+                  WHERE nr_inmatriculare = 'IS-01-GAB'),(SELECT CASE suma
+                                                        WHEN 500 THEN 6
+                                                        WHEN 900 then 12
+                                                        WHEN 1700 then 24
+                                                    END AS durata from plati
+                                                    JOIN proprietari prop ON (prop.index_proprietar = plati.index_proprietar)
+                                                    JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
+                                                     WHERE nr_inmatriculare = 'IS-01-GAB')),
+    
+    -- nr_inmatriculare
+    'IS-01-GAB',
+    
+    -- index_strada
+    (SELECT index_strada FROM strazi WHERE denumire = 'Strada Moldovei'),
+    
+    -- id_plata
+    (SELECT id_plata FROM plati
+      JOIN proprietari prop ON (prop.index_proprietar = plati.index_proprietar)
+      JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
+      WHERE nr_inmatriculare = 'IS-01-GAB')
+);
