@@ -56,9 +56,9 @@ SELECT nume, prenume, masini.nr_inmatriculare FROM proprietari prop
   WHERE nr_inmatriculare LIKE '%_9%' or nr_inmatriculare LIKE '%9_%';
  
 -- afisam toate masinile care au anul de fabricatie intre 2010 si 2019
-SELECT nume, prenume, masini.marca, masini.model FROM proprietari prop
+SELECT nume, prenume, masini.marca, masini.model, masini.data_fabricatie FROM proprietari prop
  JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
-  WHERE an_fabricatie BETWEEN 2010 AND 2019;
+  WHERE TO_CHAR(data_fabricatie,'YYYY') BETWEEN 2010 AND 2019;
  
  
 -- afisam toti proprietarii care au o capacitate la motor mai mica de 1900
@@ -84,7 +84,7 @@ SELECT nume, prenume FROM proprietari prop
 -- afisam toti proprietarii de VW care au anul fabricatiei > 2010 si capacitate motor <1700
 SELECT nume, prenume FROM proprietari prop
  JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
-  WHERE marca = 'VW' AND an_fabricatie > 2010 AND capacitate_motor < 1700;
+  WHERE marca = 'VW' AND TO_CHAR(data_fabricatie, 'YYYY') > 2010 AND capacitate_motor < 1700;
   
 -- afisam toti proprietarii care au un VW negru
 SELECT nume, prenume FROM proprietari prop
