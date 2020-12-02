@@ -8,7 +8,7 @@
  IF ( :new.data_tranzactie > SYSDATE )
   THEN
    RAISE_APPLICATION_ERROR ( -20001,
-   		'Data invalida: ' || TO_CHAR ( :new.data_tranzactie, 'DD.MM.YYYY' ) || ' trebuie sa fie mai mica decat data curenta.' );
+   		'Data invalida: ' || TO_CHAR ( :new.data_tranzactie, 'DD.MM.YYYY' ) || ' Data efectuarii platii trebuie sa fie mai mica decat data curenta.' );
    END IF;
 END;]]></body>
 <triggerTime>BEFORE</triggerTime>

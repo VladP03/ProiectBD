@@ -8,7 +8,7 @@
  IF ( :new.data_nastere > SYSDATE )
   THEN
    RAISE_APPLICATION_ERROR ( -20001,
-   		'Data invalida: ' || TO_CHAR ( :new.data_nastere, 'DD.MM.YYYY' ) || ' trebuie sa fie mai mica decat data curenta.' );
+   		'Data invalida: ' || TO_CHAR ( :new.data_nastere, 'DD.MM.YYYY' ) || ' Data nasterii trebuie sa fie mai mica decat data curenta' );
    END IF;
 END;]]></body>
 <triggerTime>BEFORE</triggerTime>
