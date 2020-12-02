@@ -95,7 +95,7 @@
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 <listOfRanges>
 <rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
-<beginValue>1</beginValue>
+<beginValue>0</beginValue>
 <endValue>9999</endValue>
 <description>Lista de valori pentru capacitatea motorului</description>
 </rangeDef>
@@ -127,7 +127,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

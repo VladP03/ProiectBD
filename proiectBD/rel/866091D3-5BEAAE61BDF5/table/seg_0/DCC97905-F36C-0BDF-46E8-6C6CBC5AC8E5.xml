@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B855B5F5-E022-B9F8-59A9-BC8161F049F4" name="Proprietari">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DCC97905-F36C-0BDF-46E8-6C6CBC5AC8E5" name="Proprietari">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-01 13:23:03 UTC</createdTime>
+<createdTime>2020-12-02 10:30:28 UTC</createdTime>
 <generatorID>9FE770EC-5051-DB4C-1180-5D5B77708352</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="index_proprietar" id="54F659FC-C1C3-8C77-2F5C-CB754812883F">
+<Column name="index_proprietar" id="7A180539-1B7B-A2C8-FC71-17B81A5E429C">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-01 13:23:03 UTC</createdTime>
+<createdTime>2020-12-02 10:30:28 UTC</createdTime>
 <generatorID>DB42D5B4-7020-F748-C868-ABD6F4DD7889</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -23,9 +23,9 @@
 <autoIncrementSequenceName>index_proprietar_seq</autoIncrementSequenceName>
 <autoIncrementTriggerName>index_proprietar_trg</autoIncrementTriggerName>
 </Column>
-<Column name="nume" id="7C159978-D097-A65D-3BF2-1460D7EEA6F4">
+<Column name="nume" id="87EE1DB3-C9F6-D986-3E93-929BB2FE9475">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-01 13:23:03 UTC</createdTime>
+<createdTime>2020-12-02 10:30:28 UTC</createdTime>
 <generatorID>908D92CE-48B6-767A-8B89-C81364FFA172</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>nume_ck</constraintName>
@@ -39,9 +39,9 @@
 <ownDataTypeParameters>15,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="prenume" id="20A1192F-803A-B5AC-FC43-E9CA65702FD0">
+<Column name="prenume" id="95244E98-A2CA-C016-76FE-A1AC7EA22BB0">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-01 13:23:03 UTC</createdTime>
+<createdTime>2020-12-02 10:30:28 UTC</createdTime>
 <generatorID>876A6CC7-896E-2327-3B2F-9220C6AE8DFB</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>prenume_ck</constraintName>
@@ -55,9 +55,9 @@
 <ownDataTypeParameters>15,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="telefon" id="55254E9F-A514-2E26-C336-184A5581BB79">
+<Column name="telefon" id="544C2A23-7354-57C8-B742-A8E6205CD329">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-01 13:23:03 UTC</createdTime>
+<createdTime>2020-12-02 10:30:28 UTC</createdTime>
 <generatorID>A14E6DE0-027E-81B2-5529-481D0AA54DA6</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>telefon_CK</constraintName>
@@ -71,9 +71,9 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="email" id="1C17468F-426F-864F-1B05-7EA652A7F9D6">
+<Column name="email" id="639898D9-4B9F-F998-2051-7A5486B55E06">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-01 13:23:03 UTC</createdTime>
+<createdTime>2020-12-02 10:30:28 UTC</createdTime>
 <generatorID>9D24E274-C4BC-B312-2D24-442414F0F41B</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <constraintName>email_CK</constraintName>
@@ -91,38 +91,38 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="20C71470-E5E9-4ABA-D048-28DCF61E3D90" name="Propietari_PK">
+<ind_PK_UK id="21B36570-D45C-5735-2E04-F10D29139A9B" name="Propietari_PK">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-01 13:23:03 UTC</createdTime>
+<createdTime>2020-12-02 10:30:28 UTC</createdTime>
 <generatorID>5F653909-0E46-14DC-9430-0357AE30795F</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="54F659FC-C1C3-8C77-2F5C-CB754812883F"/>
+<colUsage columnID="7A180539-1B7B-A2C8-FC71-17B81A5E429C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B4DAF80C-60BA-1BEB-EE21-547EED5C0B45" name="telefon_unique">
+<ind_PK_UK id="90EF3D4C-5355-F2D2-EBC0-D95B30009C49" name="telefon_unique">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-01 13:23:03 UTC</createdTime>
+<createdTime>2020-12-02 10:30:28 UTC</createdTime>
 <generatorID>B01418F2-1113-61D9-E72E-B1ECFB14F79D</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="55254E9F-A514-2E26-C336-184A5581BB79"/>
+<colUsage columnID="544C2A23-7354-57C8-B742-A8E6205CD329"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="6DD4F4E4-8DCE-5B54-B81E-AF7C8FDD3B00" name="email_unique">
+<ind_PK_UK id="7C72D61E-0EA1-2164-A0AD-BE8563B84B3D" name="email_unique">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-01 13:23:03 UTC</createdTime>
+<createdTime>2020-12-02 10:30:28 UTC</createdTime>
 <generatorID>A4DEDC1E-72D6-92A4-4E99-39549BBEA4EB</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="1C17468F-426F-864F-1B05-7EA652A7F9D6"/>
+<colUsage columnID="639898D9-4B9F-F998-2051-7A5486B55E06"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
