@@ -20,8 +20,8 @@
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<autoIncrementSequenceName>locuri_de_parcare_seq</autoIncrementSequenceName>
-<autoIncrementTriggerName>locuri_de_parcare_trg</autoIncrementTriggerName>
+<autoIncrementSequenceName>index_loc_parcare_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>index_loc_parcare_trg</autoIncrementTriggerName>
 </Column>
 <Column name="durata" id="592A0737-C794-1E07-2E1A-FFD537264FE4">
 <createdBy>Vlad</createdBy>

@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_plati_data_tranzactie" directorySegmentName="seg_0" id="B704E9DC-D9BF-2001-9AFB-70BD548FA93F">
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_plati_data_tranzactie" directorySegmentName="seg_0" id="FC4E3863-63E1-EAAD-BF30-3E11A360D164">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-01 15:21:05 UTC</createdTime>
+<createdTime>2020-12-03 15:23:43 UTC</createdTime>
 <ownerDesignName>proiectBD</ownerDesignName>
 <actions>INSERT, UPDATE</actions>
 <body><![CDATA[BEGIN
@@ -12,5 +12,5 @@
    END IF;
 END;]]></body>
 <triggerTime>BEFORE</triggerTime>
-<table>12AE1AA4-478B-4A63-151C-813DCE1B4004</table>
+<table>91F8B426-BC4C-20B8-D510-8692295252FC</table>
 </TriggerOraclev10g>

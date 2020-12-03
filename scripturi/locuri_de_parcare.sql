@@ -161,7 +161,7 @@ INSERT INTO locuri_de_parcare(durata, data_inceput, data_expirare, nr_inmatricul
     'BT-19-SIL',
     
     -- index_strada
-    (SELECT index_strada FROM strazi WHERE denumire = 'Strada Bas Ceaus'),
+    (SELECT index_strada FROM strazi WHERE denumire = 'Strada Bas Ceaus' AND cartier ='Dacia'),
     
     -- id_plata
     (SELECT id_plata FROM plati
@@ -169,6 +169,7 @@ INSERT INTO locuri_de_parcare(durata, data_inceput, data_expirare, nr_inmatricul
       JOIN masini ON (prop.index_proprietar = masini.index_proprietar)
       WHERE nr_inmatriculare = 'BT-19-SIL')
 );
+
 
 INSERT INTO locuri_de_parcare(durata, data_inceput, data_expirare, nr_inmatriculare, index_strada, id_plata) VALUES (
     -- durata

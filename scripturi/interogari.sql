@@ -167,8 +167,8 @@ SELECT nume,prenume from Proprietari prop
  JOIN Strazi ON (loc.index_strada = strazi.index_strada)
   WHERE cartier = 'Agronomie';
   
- -- afisam strazile
-SELECT denumire FROM strazi;
+ -- afisam strazile si cartierele
+SELECT denumire, cartier FROM strazi;
 
 -- afisam numele, prenumele si numarul de inmatriculare persoanei care detine un loc de parcare 'Strada Iepurilor'  
 SELECT nume,prenume, masini.nr_inmatriculare FROM Proprietari prop

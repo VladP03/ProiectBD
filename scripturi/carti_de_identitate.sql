@@ -150,7 +150,7 @@ INSERT INTO carti_de_identitate VALUES (
 
 -- seria sa contina doar 2 litere
 INSERT INTO carti_de_identitate VALUES (
-    '1990331220000',
+    '1990331220080',
     'I9',
     '999999',
     TO_DATE('22.07.1999', 'DD.MM.YYYY'),
@@ -162,7 +162,7 @@ INSERT INTO carti_de_identitate VALUES (
 
 -- numarul sa contina doar 6 cifre
 INSERT INTO carti_de_identitate VALUES (
-    '1990331220000',
+    '1990331220080',
     'I9',
     '9999A9',
     TO_DATE('22.07.1999', 'DD.MM.YYYY'),
@@ -174,7 +174,7 @@ INSERT INTO carti_de_identitate VALUES (
 
 -- data nasterii sa fie mai mica ca data curenta
 INSERT INTO carti_de_identitate VALUES (
-    '1990331220000', -- cnp-ul este deja folosit
+    '1990331220080',
     'IS',
     '999999',
     TO_DATE('22.07.2021', 'DD.MM.YYYY'),
@@ -186,7 +186,7 @@ INSERT INTO carti_de_identitate VALUES (
 
 -- sex-ul sa fie M/F
 INSERT INTO carti_de_identitate VALUES (
-    '1990331220000',
+    '1990331220080',
     'IS',
     '123457',
     TO_DATE('22.07.1999', 'DD.MM.YYYY'),
@@ -198,7 +198,7 @@ INSERT INTO carti_de_identitate VALUES (
 
 -- seria si nr sa fie unic -> pot sa am acelasi numar pe 2 serii diferite
 INSERT INTO carti_de_identitate VALUES (
-    '1990331220099',
+    '1990331220080',
     'NT',
     '123457', -- numarul deja exista pe seria IS
     TO_DATE('22.07.1999', 'DD.MM.YYYY'),
@@ -206,10 +206,10 @@ INSERT INTO carti_de_identitate VALUES (
     'Strada Iepurilor',
     'Iasi',
     (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
-);
+); -- aceasta va functiona
 
 INSERT INTO carti_de_identitate VALUES (
-    '1990331220999',
+    '1990331220089',
     'NT',
     '123457',
     TO_DATE('22.07.1999', 'DD.MM.YYYY'),

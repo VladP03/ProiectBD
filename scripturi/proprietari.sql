@@ -1,152 +1,220 @@
 -- 10 inserari bune
 
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Paraschiv',
-    'Vlad',
-    '0763917294',
-    'vladparaschiv@gmail.com'
+INSERT INTO carti_de_identitate VALUES (
+    '1990331220000',
+    'IS',
+    '123456',
+    TO_DATE('31.03.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Tudor Vladimirescu',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Paraschiv' AND prenume = 'Vlad')
 );
 
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Buliga',
-    'Diana',
-    '0739104921',
-    'dianabuliga@gmail.com'
+INSERT INTO carti_de_identitate VALUES (
+    '2991018220001',
+    'IS',
+    '097643',
+    TO_DATE('18.10.1999', 'DD.MM.YYYY'),
+    'F',
+    'Bulevard Alexandru cel Bun',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Buliga' AND prenume = 'Diana')
 );
 
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Baltariu',
-    'John',
-    '0764829403',
-    'alexjohn@gmail.com'
+INSERT INTO carti_de_identitate VALUES (
+    '1990531220002',
+    'IS',
+    '523456',
+    TO_DATE('31.05.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Arbore Luca',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Baltariu' AND prenume = 'John')
 );
 
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Butnaru',
-    'Silviu',
-    '0742845309',
-    'butnarusilviu@gmail.com'
+INSERT INTO carti_de_identitate VALUES (
+    '1991226220003',
+    'IS',
+    '123459',  
+    TO_DATE('26.12.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Bas Ceaus',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Butnaru' AND prenume = 'Silviu')
 );
 
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Prelipcean',
-    'Iulian',
-    '0761230965',
-    'iulianprelipcean@gmail.com'
+INSERT INTO carti_de_identitate VALUES (
+    '1990206220004',
+    'IS',
+    '126456',   
+    TO_DATE('06.02.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Cihac Iosif',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Prelipcean' AND prenume = 'Iulian')
 );
 
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Paval',
-    'Mihaela',
-    '0747201677',
-    'mihaelapaval@gmail.com'
+INSERT INTO carti_de_identitate VALUES (
+    '2990705220005',
+    'IS',
+    '120456',
+    TO_DATE('05.07.1999', 'DD.MM.YYYY'),
+    'F',
+    'Strada Dacia',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Paval' AND prenume = 'Mihaela')
 );
 
-INSERT INTO proprietari(nume,prenume,telefon) VALUES (
-    'Arcana',
-    'Geanina',
-    '0759024519'
+INSERT INTO carti_de_identitate VALUES (
+    '6000218220006',
+    'IS',
+    '123496',
+    TO_DATE('18.02.2000', 'DD.MM.YYYY'),
+    'F',
+    'Strada Egalitatii',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Arcana' AND prenume = 'Geanina')
 );
 
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Bejenariu',
-    'Razvan',
-    '0751529430',
-    'razvanbejenariu@gmail.com'
+INSERT INTO carti_de_identitate VALUES (
+    '1990501220007',
+    'IS',
+    '323456',
+    TO_DATE('01.05.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Fulger',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Bejenariu' AND prenume = 'Razvan')
 );
 
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Toscariu',
-    'Alberto',
-    '0760932543',
-    'albertotoscariu@gmail.com'
+INSERT INTO carti_de_identitate VALUES (
+    '1990722220008',
+    'IS',
+    '123406',
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Toscariu' AND prenume = 'Alberto')
 );
 
-INSERT INTO proprietari(nume,prenume,telefon) VALUES (
-    'Balta',
-    'Gabriel',
-    '0749899645'
-);
-
--- 2 inserari pentru alte teste
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Costache',
-    'Adrian',
-    '0768204650',
-    'adriancostache@gmail.com'
-);
-
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Mircea',
-    'Bravo',
-    '0768204999',
-    'mirceabravo@gmail.com'
+INSERT INTO carti_de_identitate VALUES (
+    '1991029220009',
+    'IS',
+    '823456',
+    TO_DATE('29.10.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Moldovei',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Balta' AND prenume = 'Gabriel')
 );
 
 
-
-
--- pentru testarea constrangerilor
--- telefonul exista deja in tabela
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Adrian',
-    'Costache',
-    '0739104921',
-    'a@b.c'
+-- testarea constrangerilor
+-- cnp trebuie sa fie unique
+INSERT INTO carti_de_identitate VALUES (
+    '1990331220000', -- cnp-ul este deja folosit
+    'IS',
+    '999999',
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
 );
 
--- email-ul este deja in tabela
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Adrian',
-    'Costache',
-    '079999999',
-    'razvanbejenariu@gmail.com'
+-- cnp-ul trebuie sa inceapa cu 1/2/5/6
+INSERT INTO carti_de_identitate VALUES (
+    '9990331220099',
+    'IS',
+    '999999',
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
 );
 
--- email-ul nu este de tip a@b.c
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Adrian',
-    'Costache',
-    '079999999',
-    'a@bc'
+-- luna din cnp e intre 01-12
+INSERT INTO carti_de_identitate VALUES (
+    '1992331220099',
+    'IS',
+    '999999',
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
 );
 
--- telefonul nu incepe cu 0
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Adrian',
-    'Costache',
-    '9912345678',
-    'hahaha@gmail.com'
+-- seria sa contina doar 2 litere
+INSERT INTO carti_de_identitate VALUES (
+    '1990331220080',
+    'I9',
+    '999999',
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
 );
 
--- telefonul are mai putin de 10 cifre
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Adrian',
-    'Costache',
-    '071234567',
-    'hahaha@gmail.com'
+-- numarul sa contina doar 6 cifre
+INSERT INTO carti_de_identitate VALUES (
+    '1990331220080',
+    'I9',
+    '9999A9',
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
 );
 
--- telefonul are mai mult de 10 cifre
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Adrian',
-    'Costache',
-    '071234567424',
-    'hahaha@gmail.com'
+-- data nasterii sa fie mai mica ca data curenta
+INSERT INTO carti_de_identitate VALUES (
+    '1990331220080',
+    'IS',
+    '999999',
+    TO_DATE('22.07.2021', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
 );
 
--- numele contine cifre
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Adr4ian',
-    'Costache',
-    '0712345624',
-    'hahaha@gmail.com'
+-- sex-ul sa fie M/F
+INSERT INTO carti_de_identitate VALUES (
+    '1990331220080',
+    'IS',
+    '123457',
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'A',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
 );
 
--- prenumele contine cifre
-INSERT INTO proprietari(nume,prenume,telefon, email) VALUES (
-    'Adrian',
-    'Costache0',
-    '0712345624',
-    'hahaha@gmail.com'
+-- seria si nr sa fie unic -> pot sa am acelasi numar pe 2 serii diferite
+INSERT INTO carti_de_identitate VALUES (
+    '1990331220080',
+    'NT',
+    '123457', -- numarul deja exista pe seria IS
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Costache' AND prenume = 'Adrian')
+); -- aceasta va functiona
+
+INSERT INTO carti_de_identitate VALUES (
+    '1990331220089',
+    'NT',
+    '123457',
+    TO_DATE('22.07.1999', 'DD.MM.YYYY'),
+    'M',
+    'Strada Iepurilor',
+    'Iasi',
+    (SELECT index_proprietar FROM proprietari WHERE nume = 'Mircea' AND prenume = 'Bravo')
 );
