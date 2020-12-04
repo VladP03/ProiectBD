@@ -35,7 +35,7 @@
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
-<constraintName>tip_plata-ck</constraintName>
+<constraintName>tip_plata_check</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -65,7 +65,7 @@
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
-<constraintName>suma_plata_ck</constraintName>
+<constraintName>suma_check</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -90,7 +90,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

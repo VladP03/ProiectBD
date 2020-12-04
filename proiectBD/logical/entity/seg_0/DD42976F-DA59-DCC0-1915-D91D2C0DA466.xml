@@ -23,7 +23,7 @@
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
-<constraintName>cnp_CK</constraintName>
+<constraintName>cnp_check</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -40,7 +40,7 @@
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
-<constraintName>serie_ck</constraintName>
+<constraintName>serie_check</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -57,7 +57,7 @@
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
-<constraintName>numar_ck</constraintName>
+<constraintName>numar_check</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -86,7 +86,7 @@
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
-<constraintName>sex_CK</constraintName>
+<constraintName>sex_check</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -117,7 +117,7 @@
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
-<constraintName>localitate_ck</constraintName>
+<constraintName>localitate_check</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -140,7 +140,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

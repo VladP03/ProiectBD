@@ -35,7 +35,7 @@
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
-<constraintName>nume_ck</constraintName>
+<constraintName>nume_check</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -52,7 +52,7 @@
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
-<constraintName>prenume_ck</constraintName>
+<constraintName>prenume_check</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -69,7 +69,7 @@
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
-<constraintName>telefon_CK</constraintName>
+<constraintName>telefon_check</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -86,7 +86,7 @@
 <engineerTo>
 <item key="866091D3-539B-67B0-2F92-5BEAAE61BDF5" value="true"/>
 </engineerTo>
-<constraintName>email_CK</constraintName>
+<constraintName>email_check</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

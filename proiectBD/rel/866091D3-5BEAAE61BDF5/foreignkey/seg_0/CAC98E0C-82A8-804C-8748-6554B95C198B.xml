@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CAC98E0C-82A8-804C-8748-6554B95C198B" containerWithKeyObject="648167A4-FC98-028E-3805-D2B7CB0FA73A" localFKIndex="C81D49A0-EEEA-02A8-5571-CFF68560706D" name="strazi_locuri_de_parcare">
+<createdBy>Vlad</createdBy>
+<createdTime>2020-12-03 21:54:02 UTC</createdTime>
+<generatorID>A94B480C-2DD3-A548-F8CD-2FDC3F13BC05</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<referredTableLongName>Strazi</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9B062801-33BE-37BA-9CEB-287EF79A973D</referredTableID>
+<keyObject>884CD2DE-BA90-2FB1-DEC5-A7A32FC611BA</keyObject>
+<referredKeyID>884CD2DE-BA90-2FB1-DEC5-A7A32FC611BA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>index_strada</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

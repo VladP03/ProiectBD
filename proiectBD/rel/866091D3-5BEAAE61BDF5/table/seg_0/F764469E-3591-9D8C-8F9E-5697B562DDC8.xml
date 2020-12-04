@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DCC97905-F36C-0BDF-46E8-6C6CBC5AC8E5" name="Proprietari">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F764469E-3591-9D8C-8F9E-5697B562DDC8" name="Proprietari">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-02 10:30:28 UTC</createdTime>
+<createdTime>2020-12-03 21:54:02 UTC</createdTime>
 <generatorID>9FE770EC-5051-DB4C-1180-5D5B77708352</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="index_proprietar" id="7A180539-1B7B-A2C8-FC71-17B81A5E429C">
+<Column name="index_proprietar" id="2E48E89F-03E2-D5D3-2858-2F9EBADB4AE1">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-02 10:30:28 UTC</createdTime>
+<createdTime>2020-12-03 21:54:02 UTC</createdTime>
 <generatorID>DB42D5B4-7020-F748-C868-ABD6F4DD7889</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -23,12 +23,12 @@
 <autoIncrementSequenceName>index_proprietar_seq</autoIncrementSequenceName>
 <autoIncrementTriggerName>index_proprietar_trg</autoIncrementTriggerName>
 </Column>
-<Column name="nume" id="87EE1DB3-C9F6-D986-3E93-929BB2FE9475">
+<Column name="nume" id="C95DAE4D-39EE-984D-6ABB-21C2BB7A1E50">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-02 10:30:28 UTC</createdTime>
+<createdTime>2020-12-03 21:54:02 UTC</createdTime>
 <generatorID>908D92CE-48B6-767A-8B89-C81364FFA172</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
-<constraintName>nume_ck</constraintName>
+<constraintName>nume_check</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -39,12 +39,12 @@
 <ownDataTypeParameters>15,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="prenume" id="95244E98-A2CA-C016-76FE-A1AC7EA22BB0">
+<Column name="prenume" id="1DA0A85A-AA53-ABD8-97C3-EA292BD1245E">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-02 10:30:28 UTC</createdTime>
+<createdTime>2020-12-03 21:54:02 UTC</createdTime>
 <generatorID>876A6CC7-896E-2327-3B2F-9220C6AE8DFB</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
-<constraintName>prenume_ck</constraintName>
+<constraintName>prenume_check</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -55,12 +55,12 @@
 <ownDataTypeParameters>15,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="telefon" id="544C2A23-7354-57C8-B742-A8E6205CD329">
+<Column name="telefon" id="AD3F25E0-D63D-196A-5012-B4B5E10274A1">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-02 10:30:28 UTC</createdTime>
+<createdTime>2020-12-03 21:54:02 UTC</createdTime>
 <generatorID>A14E6DE0-027E-81B2-5529-481D0AA54DA6</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
-<constraintName>telefon_CK</constraintName>
+<constraintName>telefon_check</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -71,12 +71,12 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="email" id="639898D9-4B9F-F998-2051-7A5486B55E06">
+<Column name="email" id="ED70CE3D-86A0-16E9-5C5F-15DA7141A2E0">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-02 10:30:28 UTC</createdTime>
+<createdTime>2020-12-03 21:54:02 UTC</createdTime>
 <generatorID>9D24E274-C4BC-B312-2D24-442414F0F41B</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
-<constraintName>email_CK</constraintName>
+<constraintName>email_check</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -91,38 +91,38 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="21B36570-D45C-5735-2E04-F10D29139A9B" name="Propietari_PK">
+<ind_PK_UK id="4BAA57E4-F2B8-E568-00EC-0D4752B0E609" name="Propietari_PK">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-02 10:30:28 UTC</createdTime>
+<createdTime>2020-12-03 21:54:02 UTC</createdTime>
 <generatorID>5F653909-0E46-14DC-9430-0357AE30795F</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="7A180539-1B7B-A2C8-FC71-17B81A5E429C"/>
+<colUsage columnID="2E48E89F-03E2-D5D3-2858-2F9EBADB4AE1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="90EF3D4C-5355-F2D2-EBC0-D95B30009C49" name="telefon_unique">
+<ind_PK_UK id="6CCB4A7D-15CE-B712-82E4-BADAAB2350E2" name="telefon_unique">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-02 10:30:28 UTC</createdTime>
+<createdTime>2020-12-03 21:54:02 UTC</createdTime>
 <generatorID>B01418F2-1113-61D9-E72E-B1ECFB14F79D</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="544C2A23-7354-57C8-B742-A8E6205CD329"/>
+<colUsage columnID="AD3F25E0-D63D-196A-5012-B4B5E10274A1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7C72D61E-0EA1-2164-A0AD-BE8563B84B3D" name="email_unique">
+<ind_PK_UK id="355B53A6-1CA0-24EA-C893-84C4BCAE533C" name="email_unique">
 <createdBy>Vlad</createdBy>
-<createdTime>2020-12-02 10:30:28 UTC</createdTime>
+<createdTime>2020-12-03 21:54:02 UTC</createdTime>
 <generatorID>A4DEDC1E-72D6-92A4-4E99-39549BBEA4EB</generatorID>
 <ownerDesignName>proiectBD</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="639898D9-4B9F-F998-2051-7A5486B55E06"/>
+<colUsage columnID="ED70CE3D-86A0-16E9-5C5F-15DA7141A2E0"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
